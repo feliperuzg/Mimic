@@ -1,0 +1,16 @@
+PODS:
+  - Mimic (0.0.1)
+
+DEPENDENCIES:
+  - Mimic (from `./`)
+
+EXTERNAL SOURCES:
+  Mimic:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  Mimic: 6a5689bbc0b1b12b13e93d0c2efa268bb1268788
+
+PODFILE CHECKSUM: 15cbfdfd883f6b283a57af7b9dd40be300d8945f
+
+COCOAPODS: 1.6.1
