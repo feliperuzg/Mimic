@@ -6,8 +6,6 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
-import Foundation
-
 class MimicProtocol: URLProtocol {
     static var mimics = [MimicObject]()
     static var registered = false

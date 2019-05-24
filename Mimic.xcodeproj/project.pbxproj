@@ -11,6 +11,12 @@
 		A7DA7897662F0D819E874C99 /* Pods_MimicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4B8A09C698894E5E60C869 /* Pods_MimicTests.framework */; };
 		A80235D92298468600FF92EA /* MimicResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235D82298468600FF92EA /* MimicResponseType.swift */; };
 		A80235DB229846AD00FF92EA /* MimicContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235DA229846AD00FF92EA /* MimicContent.swift */; };
+		A80235DD22988F1100FF92EA /* MimicURLConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235DC22988F1100FF92EA /* MimicURLConfigurationTests.swift */; };
+		A80235DF22988F2200FF92EA /* MimicProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */; };
+		A80235E122988F2E00FF92EA /* MimicObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E022988F2E00FF92EA /* MimicObjectTests.swift */; };
+		A80235E322988F4F00FF92EA /* MimicHTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */; };
+		A80235E522988F5F00FF92EA /* MimicResponseTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E422988F5F00FF92EA /* MimicResponseTypeTests.swift */; };
+		A80235E722988F7B00FF92EA /* MimicContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E622988F7B00FF92EA /* MimicContentTests.swift */; };
 		A87FBF282296E8A7005B501D /* Mimic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87FBF1E2296E8A7005B501D /* Mimic.framework */; };
 		A87FBF2D2296E8A7005B501D /* MimicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF2C2296E8A7005B501D /* MimicTests.swift */; };
 		A87FBF2F2296E8A7005B501D /* Mimic.h in Headers */ = {isa = PBXBuildFile; fileRef = A87FBF212296E8A7005B501D /* Mimic.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +52,12 @@
 		A437F3B2D6959BB131660883 /* Pods_MimicExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimicExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80235D82298468600FF92EA /* MimicResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicResponseType.swift; sourceTree = "<group>"; };
 		A80235DA229846AD00FF92EA /* MimicContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicContent.swift; sourceTree = "<group>"; };
+		A80235DC22988F1100FF92EA /* MimicURLConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicURLConfigurationTests.swift; sourceTree = "<group>"; };
+		A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicProtocolTests.swift; sourceTree = "<group>"; };
+		A80235E022988F2E00FF92EA /* MimicObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicObjectTests.swift; sourceTree = "<group>"; };
+		A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethodTests.swift; sourceTree = "<group>"; };
+		A80235E422988F5F00FF92EA /* MimicResponseTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicResponseTypeTests.swift; sourceTree = "<group>"; };
+		A80235E622988F7B00FF92EA /* MimicContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicContentTests.swift; sourceTree = "<group>"; };
 		A87FBF1E2296E8A7005B501D /* Mimic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mimic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87FBF212296E8A7005B501D /* Mimic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mimic.h; sourceTree = "<group>"; };
 		A87FBF222296E8A7005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -162,8 +174,14 @@
 		A87FBF2B2296E8A7005B501D /* MimicTests */ = {
 			isa = PBXGroup;
 			children = (
-				A87FBF2C2296E8A7005B501D /* MimicTests.swift */,
 				A87FBF2E2296E8A7005B501D /* Info.plist */,
+				A87FBF2C2296E8A7005B501D /* MimicTests.swift */,
+				A80235DC22988F1100FF92EA /* MimicURLConfigurationTests.swift */,
+				A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */,
+				A80235E022988F2E00FF92EA /* MimicObjectTests.swift */,
+				A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */,
+				A80235E422988F5F00FF92EA /* MimicResponseTypeTests.swift */,
+				A80235E622988F7B00FF92EA /* MimicContentTests.swift */,
 			);
 			path = MimicTests;
 			sourceTree = "<group>";
@@ -431,7 +449,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80235DD22988F1100FF92EA /* MimicURLConfigurationTests.swift in Sources */,
 				A87FBF2D2296E8A7005B501D /* MimicTests.swift in Sources */,
+				A80235E122988F2E00FF92EA /* MimicObjectTests.swift in Sources */,
+				A80235DF22988F2200FF92EA /* MimicProtocolTests.swift in Sources */,
+				A80235E722988F7B00FF92EA /* MimicContentTests.swift in Sources */,
+				A80235E522988F5F00FF92EA /* MimicResponseTypeTests.swift in Sources */,
+				A80235E322988F4F00FF92EA /* MimicHTTPMethodTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,8 +6,6 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
-import Foundation
-
 let swizzleURLSessionConfiguration: Void = {
     guard
         let defaultURLSessionConfiguration = class_getClassMethod(

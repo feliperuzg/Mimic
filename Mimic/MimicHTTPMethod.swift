@@ -6,8 +6,6 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
-import Foundation
-
 public enum MimicHTTPMethod : CustomStringConvertible {
     case get
     case post
