@@ -13,8 +13,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        URLSessionConfiguration.swizzleURLSessionConfiguration()
     }
 
 
+}
+
+class Lala: NSObject {
+    func load() {
+        
+    }
 }
 

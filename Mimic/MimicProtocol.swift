@@ -15,6 +15,7 @@ class MimicProtocol: URLProtocol {
     class func mimic(_ mimic: MimicObject) -> MimicObject {
         mimics.append(mimic)
         if !registered {
+            URLSessionConfiguration.swizzleURLSessionConfiguration()x
             registered = URLProtocol.registerClass(MimicProtocol.self)
         }
         return mimic

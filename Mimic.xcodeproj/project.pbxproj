@@ -20,7 +20,7 @@
 		A87FBF462296E928005B501D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87FBF452296E928005B501D /* Assets.xcassets */; };
 		A87FBF492296E928005B501D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87FBF472296E928005B501D /* LaunchScreen.storyboard */; };
 		A87FBF4F2296EE60005B501D /* Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF4E2296EE60005B501D /* Mimic.swift */; };
-		A87FBF512296EE74005B501D /* MimicURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF502296EE74005B501D /* MimicURL.swift */; };
+		A87FBF512296EE74005B501D /* MimicURLConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF502296EE74005B501D /* MimicURLConfiguration.swift */; };
 		A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF522296EE7D005B501D /* MimicProtocol.swift */; };
 		A87FBF552296EE88005B501D /* MimicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF542296EE88005B501D /* MimicObject.swift */; };
 		A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */; };
@@ -60,7 +60,7 @@
 		A87FBF482296E928005B501D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A87FBF4A2296E928005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87FBF4E2296EE60005B501D /* Mimic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mimic.swift; sourceTree = "<group>"; };
-		A87FBF502296EE74005B501D /* MimicURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicURL.swift; sourceTree = "<group>"; };
+		A87FBF502296EE74005B501D /* MimicURLConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicURLConfiguration.swift; sourceTree = "<group>"; };
 		A87FBF522296EE7D005B501D /* MimicProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicProtocol.swift; sourceTree = "<group>"; };
 		A87FBF542296EE88005B501D /* MimicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicObject.swift; sourceTree = "<group>"; };
 		A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethod.swift; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 				A87FBF212296E8A7005B501D /* Mimic.h */,
 				A87FBF222296E8A7005B501D /* Info.plist */,
 				A87FBF4E2296EE60005B501D /* Mimic.swift */,
-				A87FBF502296EE74005B501D /* MimicURL.swift */,
+				A87FBF502296EE74005B501D /* MimicURLConfiguration.swift */,
 				A87FBF522296EE7D005B501D /* MimicProtocol.swift */,
 				A87FBF542296EE88005B501D /* MimicObject.swift */,
 				A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */,
@@ -422,7 +422,7 @@
 				A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */,
 				A80235D92298468600FF92EA /* MimicResponseType.swift in Sources */,
 				A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */,
-				A87FBF512296EE74005B501D /* MimicURL.swift in Sources */,
+				A87FBF512296EE74005B501D /* MimicURLConfiguration.swift in Sources */,
 				A87FBF552296EE88005B501D /* MimicObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
