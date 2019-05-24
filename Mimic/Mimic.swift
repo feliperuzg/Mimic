@@ -8,23 +8,32 @@
 
 import Foundation
 
+public typealias MimicRequest = (URLRequest) -> (Bool)
+public typealias MimicResponse = (URLRequest) -> (MimicResponseType)
+
 public final class Mimic {
-}
-
-public typealias Request = (URLRequest) -> (Bool)
-public typealias Response = (URLRequest) -> (ResponseType)
-
-public enum ResponseType : Equatable {
-    case success(URLResponse, Content)
-    case failure(NSError)
-}
-
-public enum Content: ExpressibleByNilLiteral, Equatable {
-    public init(nilLiteral: ()) {
-        self = .empty
+    @discardableResult
+    public class func mimic(
+        request: @escaping MimicRequest,
+        delay: TimeInterval = 0,
+        response: @escaping MimicResponse
+        ) -> MimicObject {
+        return MimicProtocol.mimic(
+            MimicObject(
+                request: request,
+                delay: delay,
+                response: response
+            )
+        )
     }
-    case content(Data)
-    case empty
+    
+    public class func stopMimic(_ mimic: MimicObject) {
+        MimicProtocol.stopMimic(mimic)
+    }
+    
+    public class func stopAllMimics() {
+        MimicProtocol.stopAllMimics()
+    }
 }
 
 
@@ -44,7 +53,7 @@ public func response(
     with json: Any,
     status: Int = 200,
     headers: [String:String]? = nil
-    ) -> (_ request: URLRequest) -> ResponseType {
+    ) -> (_ request: URLRequest) -> MimicResponseType {
     return { (request: URLRequest) in
         do {
             let data = try JSONSerialization.data(
@@ -61,16 +70,16 @@ public func response(
                 httpVersion: nil,
                 headerFields: headers
                 ) {
-                return ResponseType.success(response, .content(data))
+                return MimicResponseType.success(response, .content(data))
             } else {
-                return ResponseType.failure(NSError(
+                return MimicResponseType.failure(NSError(
                     domain: NSExceptionName.internalInconsistencyException.rawValue,
                     code: 0,
-                    userInfo: [NSLocalizedDescriptionKey: "Failed to construct response for stub."]
+                    userInfo: [NSLocalizedDescriptionKey: "Failed to create MimicResponse"]
                     ))
             }
         } catch {
-            return ResponseType.failure(error as NSError)
+            return MimicResponseType.failure(error as NSError)
         }
     }
 }

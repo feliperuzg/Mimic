@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F2E3EEE62C0F6DEC74F00A9 /* Pods_MimicExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A437F3B2D6959BB131660883 /* Pods_MimicExample.framework */; };
 		A7DA7897662F0D819E874C99 /* Pods_MimicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4B8A09C698894E5E60C869 /* Pods_MimicTests.framework */; };
+		A80235D92298468600FF92EA /* MimicResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235D82298468600FF92EA /* MimicResponseType.swift */; };
+		A80235DB229846AD00FF92EA /* MimicContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235DA229846AD00FF92EA /* MimicContent.swift */; };
 		A87FBF282296E8A7005B501D /* Mimic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87FBF1E2296E8A7005B501D /* Mimic.framework */; };
 		A87FBF2D2296E8A7005B501D /* MimicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF2C2296E8A7005B501D /* MimicTests.swift */; };
 		A87FBF2F2296E8A7005B501D /* Mimic.h in Headers */ = {isa = PBXBuildFile; fileRef = A87FBF212296E8A7005B501D /* Mimic.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +44,8 @@
 		8FF12F10F04593D4C136D248 /* Pods-Mimic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mimic.release.xcconfig"; path = "Target Support Files/Pods-Mimic/Pods-Mimic.release.xcconfig"; sourceTree = "<group>"; };
 		923963D5FCECD1E258A57330 /* Pods_Mimic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mimic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A437F3B2D6959BB131660883 /* Pods_MimicExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimicExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80235D82298468600FF92EA /* MimicResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicResponseType.swift; sourceTree = "<group>"; };
+		A80235DA229846AD00FF92EA /* MimicContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicContent.swift; sourceTree = "<group>"; };
 		A87FBF1E2296E8A7005B501D /* Mimic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mimic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87FBF212296E8A7005B501D /* Mimic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mimic.h; sourceTree = "<group>"; };
 		A87FBF222296E8A7005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				A87FBF522296EE7D005B501D /* MimicProtocol.swift */,
 				A87FBF542296EE88005B501D /* MimicObject.swift */,
 				A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */,
+				A80235D82298468600FF92EA /* MimicResponseType.swift */,
+				A80235DA229846AD00FF92EA /* MimicContent.swift */,
 			);
 			path = Mimic;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 				A87FBF382296E926005B501D /* Sources */,
 				A87FBF392296E926005B501D /* Frameworks */,
 				A87FBF3A2296E926005B501D /* Resources */,
+				556DF6600AE0A9185A80DC95 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +322,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		556DF6600AE0A9185A80DC95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MimicExample/Pods-MimicExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mimic/Mimic.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mimic.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MimicExample/Pods-MimicExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BD60807C7A90F93E60D2A499 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,7 +418,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A87FBF4F2296EE60005B501D /* Mimic.swift in Sources */,
+				A80235DB229846AD00FF92EA /* MimicContent.swift in Sources */,
 				A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */,
+				A80235D92298468600FF92EA /* MimicResponseType.swift in Sources */,
 				A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */,
 				A87FBF512296EE74005B501D /* MimicURL.swift in Sources */,
 				A87FBF552296EE88005B501D /* MimicObject.swift in Sources */,

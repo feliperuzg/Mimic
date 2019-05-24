@@ -8,13 +8,15 @@
 
 import Foundation
 
-public class MimicProtocol: URLProtocol {
-    
+class MimicProtocol: URLProtocol {
     static var mimics = [MimicObject]()
+    static var registered = false
     
     class func mimic(_ mimic: MimicObject) -> MimicObject {
         mimics.append(mimic)
-        URLProtocol.registerClass(MimicProtocol.self)
+        if !registered {
+            registered = URLProtocol.registerClass(MimicProtocol.self)
+        }
         return mimic
     }
     
@@ -56,22 +58,18 @@ public class MimicProtocol: URLProtocol {
             let error = NSError(
                 domain: NSExceptionName.internalInconsistencyException.rawValue,
                 code: 0,
-                userInfo: [NSLocalizedDescriptionKey: "Handling request without a matching stub."]
+                userInfo: [NSLocalizedDescriptionKey: "No Mimic for request"]
             )
             client?.urlProtocol(self, didFailWithError: error)
         }
     }
     
-    override open func stopLoading() {
-//        self.enableDownloading = false
-//        self.operationQueue.cancelAllOperations()
-    }
-    
-    public func responseType(_ responseType: ResponseType) {
+    public func responseType(_ responseType: MimicResponseType) {
         switch responseType {
         case .success(let response, let content):
             switch content {
                 case .content(let data):
+                    client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
                     client?.urlProtocol(self, didLoad: data)
                 case .empty:
                     client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)

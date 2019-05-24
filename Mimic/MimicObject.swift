@@ -9,20 +9,17 @@
 import Foundation
 
 public struct MimicObject: Equatable {
-    let request: Request
-    let status: Int
+    let request: MimicRequest
     let delay: TimeInterval
-    let response: Response
+    let response: MimicResponse
     let uuid: UUID
     
-    init(
-        request: @escaping Request,
-        status: Int,
+    public init(
+        request: @escaping MimicRequest,
         delay: TimeInterval = 0,
-        response: @escaping Response
+        response: @escaping MimicResponse
         ) {
         self.request = request
-        self.status = status
         self.delay = delay
         self.response = response
         uuid = UUID()
