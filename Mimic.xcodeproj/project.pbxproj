@@ -17,6 +17,11 @@
 		A87FBF442296E926005B501D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87FBF422296E926005B501D /* Main.storyboard */; };
 		A87FBF462296E928005B501D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87FBF452296E928005B501D /* Assets.xcassets */; };
 		A87FBF492296E928005B501D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87FBF472296E928005B501D /* LaunchScreen.storyboard */; };
+		A87FBF4F2296EE60005B501D /* Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF4E2296EE60005B501D /* Mimic.swift */; };
+		A87FBF512296EE74005B501D /* MimicURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF502296EE74005B501D /* MimicURL.swift */; };
+		A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF522296EE7D005B501D /* MimicProtocol.swift */; };
+		A87FBF552296EE88005B501D /* MimicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF542296EE88005B501D /* MimicObject.swift */; };
+		A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */; };
 		B4644ACC551B1E61F0F8C5EC /* Pods_Mimic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923963D5FCECD1E258A57330 /* Pods_Mimic.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,11 @@
 		A87FBF452296E928005B501D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A87FBF482296E928005B501D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A87FBF4A2296E928005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A87FBF4E2296EE60005B501D /* Mimic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mimic.swift; sourceTree = "<group>"; };
+		A87FBF502296EE74005B501D /* MimicURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicURL.swift; sourceTree = "<group>"; };
+		A87FBF522296EE7D005B501D /* MimicProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicProtocol.swift; sourceTree = "<group>"; };
+		A87FBF542296EE88005B501D /* MimicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicObject.swift; sourceTree = "<group>"; };
+		A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethod.swift; sourceTree = "<group>"; };
 		B5C7911CCE74658EADFB6BB0 /* Pods-MimicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimicTests.release.xcconfig"; path = "Target Support Files/Pods-MimicTests/Pods-MimicTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8A1B6174F64F1130129CB87 /* Pods-MimicExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimicExample.debug.xcconfig"; path = "Target Support Files/Pods-MimicExample/Pods-MimicExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E8ECA15B1923D7752B7CD2FD /* Pods-MimicExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimicExample.release.xcconfig"; path = "Target Support Files/Pods-MimicExample/Pods-MimicExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,7 +104,6 @@
 				3C0BC77ECADFF682B68E68D1 /* Pods-MimicTests.debug.xcconfig */,
 				B5C7911CCE74658EADFB6BB0 /* Pods-MimicTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,6 +144,11 @@
 			children = (
 				A87FBF212296E8A7005B501D /* Mimic.h */,
 				A87FBF222296E8A7005B501D /* Info.plist */,
+				A87FBF4E2296EE60005B501D /* Mimic.swift */,
+				A87FBF502296EE74005B501D /* MimicURL.swift */,
+				A87FBF522296EE7D005B501D /* MimicProtocol.swift */,
+				A87FBF542296EE88005B501D /* MimicObject.swift */,
+				A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */,
 			);
 			path = Mimic;
 			sourceTree = "<group>";
@@ -243,6 +257,7 @@
 				TargetAttributes = {
 					A87FBF1D2296E8A7005B501D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					A87FBF262296E8A7005B501D = {
 						CreatedOnToolsVersion = 10.1;
@@ -373,6 +388,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87FBF4F2296EE60005B501D /* Mimic.swift in Sources */,
+				A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */,
+				A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */,
+				A87FBF512296EE74005B501D /* MimicURL.swift in Sources */,
+				A87FBF552296EE88005B501D /* MimicObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 66E73EE3A3473EAA19F2EC13 /* Pods-Mimic.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -566,6 +587,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.Mimic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -575,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FF12F10F04593D4C136D248 /* Pods-Mimic.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -601,6 +624,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C0BC77ECADFF682B68E68D1 /* Pods-MimicTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2D3TXVT8E8;
 				INFOPLIST_FILE = MimicTests/Info.plist;
@@ -620,6 +644,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5C7911CCE74658EADFB6BB0 /* Pods-MimicTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2D3TXVT8E8;
 				INFOPLIST_FILE = MimicTests/Info.plist;
