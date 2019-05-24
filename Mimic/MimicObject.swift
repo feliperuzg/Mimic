@@ -14,7 +14,7 @@ public struct MimicObject: Equatable {
     let response: MimicResponse
     let uuid: UUID
     
-    public init(
+    init(
         request: @escaping MimicRequest,
         delay: TimeInterval = 0,
         response: @escaping MimicResponse

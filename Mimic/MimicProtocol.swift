@@ -15,7 +15,7 @@ class MimicProtocol: URLProtocol {
     class func mimic(_ mimic: MimicObject) -> MimicObject {
         mimics.append(mimic)
         if !registered {
-            URLSessionConfiguration.swizzleURLSessionConfiguration()x
+            URLSessionConfiguration.swizzleURLSessionConfiguration()
             registered = URLProtocol.registerClass(MimicProtocol.self)
         }
         return mimic
@@ -63,6 +63,10 @@ class MimicProtocol: URLProtocol {
             )
             client?.urlProtocol(self, didFailWithError: error)
         }
+    }
+    
+    override open func stopLoading() {
+        
     }
     
     public func responseType(_ responseType: MimicResponseType) {
