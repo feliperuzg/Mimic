@@ -18,7 +18,7 @@ let swizzleURLSessionConfiguration: Void = {
             URLSessionConfiguration.self,
             #selector(URLSessionConfiguration.mimicDefaultSessionConfiguration)
         ) else {
-        fatalError("Failed to exange URLSessionConfiguration.default")
+        fatalError("Failed to exchange URLSessionConfiguration.default")
     }
     method_exchangeImplementations(
         defaultURLSessionConfiguration,
@@ -34,7 +34,7 @@ let swizzleURLSessionConfiguration: Void = {
             URLSessionConfiguration.self,
             #selector(URLSessionConfiguration.mimicEphemeralSessionConfiguration)
         ) else {
-        fatalError("Failed to exange URLSessionConfiguration.ephemeral")
+        fatalError("Failed to exchange URLSessionConfiguration.ephemeral")
     }
     method_exchangeImplementations(
         ephemeralSessionConfiguration,
