@@ -34,11 +34,13 @@ public final class Mimic {
     }
 }
 
-public func request(with method: MimicHTTPMethod, url _: String) -> (_ request: URLRequest) -> Bool {
+public func request(with method: MimicHTTPMethod, url: String) -> (_ request: URLRequest) -> Bool {
     return { (request: URLRequest) in
         guard
             let requestMethod = request.httpMethod,
-            requestMethod == method.description
+            requestMethod == method.description,
+            let requestUrl = request.url?.absoluteString,
+            requestUrl == url
         else {
             return false
         }
