@@ -60,7 +60,7 @@
 		A80235E022988F2E00FF92EA /* MimicObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicObjectTests.swift; sourceTree = "<group>"; };
 		A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethodTests.swift; sourceTree = "<group>"; };
 		A80235E622988F7B00FF92EA /* MimicContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicContentTests.swift; sourceTree = "<group>"; };
-		A80235E9229C302900FF92EA /* Mimic.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mimic.podspec; sourceTree = "<group>"; };
+		A80235E9229C302900FF92EA /* Mimic.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mimic.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A80235EA229C302A00FF92EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A80235ED229C307F00FF92EA /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A80235EF229C308800FF92EA /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
