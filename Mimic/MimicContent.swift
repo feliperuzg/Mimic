@@ -6,7 +6,7 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
-public enum MimicContent: ExpressibleByNilLiteral, Equatable {
+public enum MimicContent: ExpressibleByNilLiteral {
     public init(nilLiteral _: ()) {
         self = .empty
     }

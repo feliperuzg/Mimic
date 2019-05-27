@@ -15,7 +15,6 @@
 		A80235DF22988F2200FF92EA /* MimicProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */; };
 		A80235E122988F2E00FF92EA /* MimicObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E022988F2E00FF92EA /* MimicObjectTests.swift */; };
 		A80235E322988F4F00FF92EA /* MimicHTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */; };
-		A80235E522988F5F00FF92EA /* MimicResponseTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E422988F5F00FF92EA /* MimicResponseTypeTests.swift */; };
 		A80235E722988F7B00FF92EA /* MimicContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E622988F7B00FF92EA /* MimicContentTests.swift */; };
 		A80235EB229C302A00FF92EA /* Mimic.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A80235E9229C302900FF92EA /* Mimic.podspec */; };
 		A80235EC229C302A00FF92EA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A80235EA229C302A00FF92EA /* README.md */; };
@@ -60,7 +59,6 @@
 		A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicProtocolTests.swift; sourceTree = "<group>"; };
 		A80235E022988F2E00FF92EA /* MimicObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicObjectTests.swift; sourceTree = "<group>"; };
 		A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethodTests.swift; sourceTree = "<group>"; };
-		A80235E422988F5F00FF92EA /* MimicResponseTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicResponseTypeTests.swift; sourceTree = "<group>"; };
 		A80235E622988F7B00FF92EA /* MimicContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicContentTests.swift; sourceTree = "<group>"; };
 		A80235E9229C302900FF92EA /* Mimic.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mimic.podspec; sourceTree = "<group>"; };
 		A80235EA229C302A00FF92EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -192,7 +190,6 @@
 				A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */,
 				A80235E022988F2E00FF92EA /* MimicObjectTests.swift */,
 				A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */,
-				A80235E422988F5F00FF92EA /* MimicResponseTypeTests.swift */,
 				A80235E622988F7B00FF92EA /* MimicContentTests.swift */,
 			);
 			path = MimicTests;
@@ -546,7 +543,6 @@
 				A80235E122988F2E00FF92EA /* MimicObjectTests.swift in Sources */,
 				A80235DF22988F2200FF92EA /* MimicProtocolTests.swift in Sources */,
 				A80235E722988F7B00FF92EA /* MimicContentTests.swift in Sources */,
-				A80235E522988F5F00FF92EA /* MimicResponseTypeTests.swift in Sources */,
 				A80235E322988F4F00FF92EA /* MimicHTTPMethodTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
