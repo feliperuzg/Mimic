@@ -6,8 +6,8 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
-import XCTest
 @testable import Mimic
+import XCTest
 
 class MimicObjectTests: XCTestCase {
     var sut: MimicObject!
@@ -26,39 +26,39 @@ class MimicObjectTests: XCTestCase {
         XCTAssertNotNil(sut)
         XCTAssertEqual(sut.delay, 2)
     }
-    
+
     func testCanInitWithoutDelay() {
         sut = MimicObject(
             request: request(with: .get, url: "http://localhost"),
             response: response(with: [:])
         )
-        
+
         XCTAssertNotNil(sut)
         XCTAssertEqual(sut.delay, 0)
     }
-    
+
     func testComparison() {
         sut = MimicObject(
             request: request(with: .get, url: "http://localhost"),
             response: response(with: [:])
         )
-        
+
         let compareObject = sut
-        
+
         XCTAssertEqual(sut, compareObject)
     }
-    
+
     func testComparsionShouldFail() {
         sut = MimicObject(
             request: request(with: .get, url: "http://localhost"),
             response: response(with: [:])
         )
-        
+
         let compareObject = MimicObject(
             request: request(with: .get, url: "http://localhost"),
             response: response(with: [:])
         )
-        
+
         XCTAssertNotEqual(sut, compareObject)
     }
 }

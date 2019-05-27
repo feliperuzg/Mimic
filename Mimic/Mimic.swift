@@ -6,8 +6,8 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
-public typealias MimicRequest = (URLRequest) -> (Bool)
-public typealias MimicResponse = (URLRequest) -> (MimicResponseType)
+public typealias MimicRequest = (URLRequest) -> Bool
+public typealias MimicResponse = (URLRequest) -> MimicResponseType
 
 public final class Mimic {
     @discardableResult
@@ -15,7 +15,7 @@ public final class Mimic {
         request: @escaping MimicRequest,
         delay: TimeInterval = 0,
         response: @escaping MimicResponse
-        ) -> MimicObject {
+    ) -> MimicObject {
         return MimicProtocol.mimic(
             MimicObject(
                 request: request,
@@ -24,23 +24,22 @@ public final class Mimic {
             )
         )
     }
-    
+
     public class func stopMimic(_ mimic: MimicObject) {
         MimicProtocol.stopMimic(mimic)
     }
-    
+
     public class func stopAllMimics() {
         MimicProtocol.stopAllMimics()
     }
 }
 
-
-public func request(with method: MimicHTTPMethod, url: String) -> (_ request: URLRequest) -> Bool {
+public func request(with method: MimicHTTPMethod, url _: String) -> (_ request: URLRequest) -> Bool {
     return { (request: URLRequest) in
         guard
             let requestMethod = request.httpMethod,
             requestMethod == method.description
-            else {
+        else {
             return false
         }
         return true
@@ -50,8 +49,8 @@ public func request(with method: MimicHTTPMethod, url: String) -> (_ request: UR
 public func response(
     with json: Any,
     status: Int = 200,
-    headers: [String:String]? = nil
-    ) -> (_ request: URLRequest) -> MimicResponseType {
+    headers: [String: String]? = nil
+) -> (_ request: URLRequest) -> MimicResponseType {
     return { (request: URLRequest) in
         do {
             let data = try JSONSerialization.data(
@@ -67,19 +66,17 @@ public func response(
                 statusCode: status,
                 httpVersion: nil,
                 headerFields: headers
-                ) {
+            ) {
                 return MimicResponseType.success(response, .content(data))
             } else {
                 return MimicResponseType.failure(NSError(
                     domain: NSExceptionName.internalInconsistencyException.rawValue,
                     code: 0,
                     userInfo: [NSLocalizedDescriptionKey: "Failed to create MimicResponse"]
-                    ))
+                ))
             }
         } catch {
             return MimicResponseType.failure(error as NSError)
         }
     }
 }
-
-

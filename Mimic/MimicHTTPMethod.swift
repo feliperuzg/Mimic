@@ -6,13 +6,13 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
-public enum MimicHTTPMethod : CustomStringConvertible {
+public enum MimicHTTPMethod: CustomStringConvertible {
     case get
     case post
     case put
     case delete
-    
-    public var description : String {
+
+    public var description: String {
         switch self {
         case .get:
             return "GET"

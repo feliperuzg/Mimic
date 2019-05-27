@@ -7,9 +7,10 @@
 //
 
 public enum MimicContent: ExpressibleByNilLiteral, Equatable {
-    public init(nilLiteral: ()) {
+    public init(nilLiteral _: ()) {
         self = .empty
     }
+
     case content(Data)
     case empty
 }

@@ -17,6 +17,10 @@
 		A80235E322988F4F00FF92EA /* MimicHTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */; };
 		A80235E522988F5F00FF92EA /* MimicResponseTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E422988F5F00FF92EA /* MimicResponseTypeTests.swift */; };
 		A80235E722988F7B00FF92EA /* MimicContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E622988F7B00FF92EA /* MimicContentTests.swift */; };
+		A80235EB229C302A00FF92EA /* Mimic.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A80235E9229C302900FF92EA /* Mimic.podspec */; };
+		A80235EC229C302A00FF92EA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A80235EA229C302A00FF92EA /* README.md */; };
+		A80235EE229C307F00FF92EA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A80235ED229C307F00FF92EA /* .swiftlint.yml */; };
+		A80235F0229C308800FF92EA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A80235EF229C308800FF92EA /* .swiftlint.yml */; };
 		A87FBF282296E8A7005B501D /* Mimic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87FBF1E2296E8A7005B501D /* Mimic.framework */; };
 		A87FBF2D2296E8A7005B501D /* MimicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF2C2296E8A7005B501D /* MimicTests.swift */; };
 		A87FBF2F2296E8A7005B501D /* Mimic.h in Headers */ = {isa = PBXBuildFile; fileRef = A87FBF212296E8A7005B501D /* Mimic.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,7 +30,7 @@
 		A87FBF462296E928005B501D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87FBF452296E928005B501D /* Assets.xcassets */; };
 		A87FBF492296E928005B501D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87FBF472296E928005B501D /* LaunchScreen.storyboard */; };
 		A87FBF4F2296EE60005B501D /* Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF4E2296EE60005B501D /* Mimic.swift */; };
-		A87FBF512296EE74005B501D /* MimicURLConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF502296EE74005B501D /* MimicURLConfiguration.swift */; };
+		A87FBF512296EE74005B501D /* URLSessionConfiguration+Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF502296EE74005B501D /* URLSessionConfiguration+Mimic.swift */; };
 		A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF522296EE7D005B501D /* MimicProtocol.swift */; };
 		A87FBF552296EE88005B501D /* MimicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF542296EE88005B501D /* MimicObject.swift */; };
 		A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */; };
@@ -58,6 +62,10 @@
 		A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethodTests.swift; sourceTree = "<group>"; };
 		A80235E422988F5F00FF92EA /* MimicResponseTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicResponseTypeTests.swift; sourceTree = "<group>"; };
 		A80235E622988F7B00FF92EA /* MimicContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicContentTests.swift; sourceTree = "<group>"; };
+		A80235E9229C302900FF92EA /* Mimic.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mimic.podspec; sourceTree = "<group>"; };
+		A80235EA229C302A00FF92EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A80235ED229C307F00FF92EA /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A80235EF229C308800FF92EA /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A87FBF1E2296E8A7005B501D /* Mimic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mimic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87FBF212296E8A7005B501D /* Mimic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mimic.h; sourceTree = "<group>"; };
 		A87FBF222296E8A7005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,7 +80,7 @@
 		A87FBF482296E928005B501D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A87FBF4A2296E928005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87FBF4E2296EE60005B501D /* Mimic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mimic.swift; sourceTree = "<group>"; };
-		A87FBF502296EE74005B501D /* MimicURLConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicURLConfiguration.swift; sourceTree = "<group>"; };
+		A87FBF502296EE74005B501D /* URLSessionConfiguration+Mimic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Mimic.swift"; sourceTree = "<group>"; };
 		A87FBF522296EE7D005B501D /* MimicProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicProtocol.swift; sourceTree = "<group>"; };
 		A87FBF542296EE88005B501D /* MimicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicObject.swift; sourceTree = "<group>"; };
 		A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethod.swift; sourceTree = "<group>"; };
@@ -136,6 +144,8 @@
 		A87FBF142296E8A7005B501D = {
 			isa = PBXGroup;
 			children = (
+				A80235E9229C302900FF92EA /* Mimic.podspec */,
+				A80235EA229C302A00FF92EA /* README.md */,
 				A87FBF202296E8A7005B501D /* Mimic */,
 				A87FBF2B2296E8A7005B501D /* MimicTests */,
 				A87FBF3D2296E926005B501D /* MimicExample */,
@@ -158,10 +168,11 @@
 		A87FBF202296E8A7005B501D /* Mimic */ = {
 			isa = PBXGroup;
 			children = (
+				A80235ED229C307F00FF92EA /* .swiftlint.yml */,
 				A87FBF212296E8A7005B501D /* Mimic.h */,
 				A87FBF222296E8A7005B501D /* Info.plist */,
 				A87FBF4E2296EE60005B501D /* Mimic.swift */,
-				A87FBF502296EE74005B501D /* MimicURLConfiguration.swift */,
+				A87FBF502296EE74005B501D /* URLSessionConfiguration+Mimic.swift */,
 				A87FBF522296EE7D005B501D /* MimicProtocol.swift */,
 				A87FBF542296EE88005B501D /* MimicObject.swift */,
 				A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */,
@@ -174,6 +185,7 @@
 		A87FBF2B2296E8A7005B501D /* MimicTests */ = {
 			isa = PBXGroup;
 			children = (
+				A80235EF229C308800FF92EA /* .swiftlint.yml */,
 				A87FBF2E2296E8A7005B501D /* Info.plist */,
 				A87FBF2C2296E8A7005B501D /* MimicTests.swift */,
 				A80235DC22988F1100FF92EA /* MimicURLConfigurationTests.swift */,
@@ -222,6 +234,8 @@
 				A87FBF1A2296E8A7005B501D /* Sources */,
 				A87FBF1B2296E8A7005B501D /* Frameworks */,
 				A87FBF1C2296E8A7005B501D /* Resources */,
+				A80235F2229C30FB00FF92EA /* SwiftFormat */,
+				A80235F3229C310400FF92EA /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -240,6 +254,8 @@
 				A87FBF232296E8A7005B501D /* Sources */,
 				A87FBF242296E8A7005B501D /* Frameworks */,
 				A87FBF252296E8A7005B501D /* Resources */,
+				A80235F4229C332100FF92EA /* SwiftFormat */,
+				A80235F5229C333300FF92EA /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -317,6 +333,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80235EE229C307F00FF92EA /* .swiftlint.yml in Resources */,
+				A80235EC229C302A00FF92EA /* README.md in Resources */,
+				A80235EB229C302A00FF92EA /* Mimic.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80235F0229C308800FF92EA /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +381,78 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MimicExample/Pods-MimicExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A80235F2229C30FB00FF92EA /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "hash ${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat 2>/dev/null || { echo >&2 \"swiftformat it's not installed.  Aborting.\"; exit 1; }\n${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat ${SRCROOT}/Mimic --commas inline --wraparguments beforefirst\n";
+		};
+		A80235F3229C310400FF92EA /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "hash ${PODS_ROOT}/SwiftLint/swiftlint 2>/dev/null || { echo >&2 \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"; exit 1; }\ncd ${SRCROOT}/Mimic\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		A80235F4229C332100FF92EA /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "hash ${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat 2>/dev/null || { echo >&2 \"swiftformat it's not installed.  Aborting.\"; exit 1; }\n${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat ${SRCROOT}/MimicTests --commas inline --wraparguments beforefirst\n\n";
+		};
+		A80235F5229C333300FF92EA /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "hash ${PODS_ROOT}/SwiftLint/swiftlint 2>/dev/null || { echo >&2 \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"; exit 1; }\ncd ${SRCROOT}/MimicTests\n${PODS_ROOT}/SwiftLint/swiftlint\n\n";
 		};
 		BD60807C7A90F93E60D2A499 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -440,7 +532,7 @@
 				A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */,
 				A80235D92298468600FF92EA /* MimicResponseType.swift in Sources */,
 				A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */,
-				A87FBF512296EE74005B501D /* MimicURLConfiguration.swift in Sources */,
+				A87FBF512296EE74005B501D /* URLSessionConfiguration+Mimic.swift in Sources */,
 				A87FBF552296EE88005B501D /* MimicObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

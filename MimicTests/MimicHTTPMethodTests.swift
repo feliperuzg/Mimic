@@ -6,32 +6,32 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
-import XCTest
 @testable import Mimic
+import XCTest
 
 class MimicHTTPMethodTests: XCTestCase {
     var sut: MimicHTTPMethod!
-    
+
     override func tearDown() {
         sut = nil
         super.tearDown()
     }
-    
+
     func testDescriptionProperty() {
         sut = .get
-        
+
         XCTAssertEqual(sut.description, "GET")
-        
+
         sut = .post
-        
+
         XCTAssertEqual(sut.description, "POST")
-        
+
         sut = .put
-        
+
         XCTAssertEqual(sut.description, "PUT")
-        
+
         sut = .delete
-        
+
         XCTAssertEqual(sut.description, "DELETE")
     }
 }

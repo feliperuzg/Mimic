@@ -9,7 +9,7 @@
 class MimicProtocol: URLProtocol {
     static var mimics = [MimicObject]()
     static var registered = false
-    
+
     class func mimic(_ mimic: MimicObject) -> MimicObject {
         mimics.append(mimic)
         if !registered {
@@ -18,7 +18,7 @@ class MimicProtocol: URLProtocol {
         }
         return mimic
     }
-    
+
     class func mimic(for request: URLRequest) -> MimicObject? {
         for mimic in mimics {
             if mimic.request(request) {
@@ -27,28 +27,27 @@ class MimicProtocol: URLProtocol {
         }
         return nil
     }
-    
-    open class func stopMimic(_ mimic: MimicObject) {
+
+    class func stopMimic(_ mimic: MimicObject) {
         if let index = mimics.index(of: mimic) {
             mimics.remove(at: index)
         }
     }
-    
-    open class func stopAllMimics() {
+
+    class func stopAllMimics() {
         mimics.removeAll()
     }
-    
-    
-    open override class func canInit(with request: URLRequest) -> Bool {
-        guard (mimic(for: request) != nil) else { return false }
+
+    override class func canInit(with request: URLRequest) -> Bool {
+        guard mimic(for: request) != nil else { return false }
         return true
     }
-    
-    override open class func canonicalRequest(for request: URLRequest) -> URLRequest {
+
+    override class func canonicalRequest(for request: URLRequest) -> URLRequest {
         return request
     }
-    
-    override open func startLoading() {
+
+    override func startLoading() {
         if let mimic = MimicProtocol.mimic(for: request) {
             DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + mimic.delay) {
                 self.responseType(mimic.response(self.request))
@@ -62,23 +61,21 @@ class MimicProtocol: URLProtocol {
             client?.urlProtocol(self, didFailWithError: error)
         }
     }
-    
-    override open func stopLoading() {
-        
-    }
-    
-    public func responseType(_ responseType: MimicResponseType) {
+
+    override func stopLoading() {}
+
+    func responseType(_ responseType: MimicResponseType) {
         switch responseType {
-        case .success(let response, let content):
+        case let .success(response, content):
             switch content {
-                case .content(let data):
-                    client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
-                    client?.urlProtocol(self, didLoad: data)
-                case .empty:
-                    client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
+            case let .content(data):
+                client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
+                client?.urlProtocol(self, didLoad: data)
+            case .empty:
+                client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
             }
             client?.urlProtocolDidFinishLoading(self)
-        case .failure(let error):
+        case let .failure(error):
             client?.urlProtocol(self, didFailWithError: error)
         }
     }
