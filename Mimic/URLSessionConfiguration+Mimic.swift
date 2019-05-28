@@ -7,6 +7,8 @@
 //
 
 extension URLSessionConfiguration {
+    private static var swizzled = false
+
     class func activateMimic() {
         swizzleURLSessionConfiguration(to: true)
         debugPrint("Mimic has been Activated")
@@ -18,6 +20,7 @@ extension URLSessionConfiguration {
     }
 
     private class func swizzleURLSessionConfiguration(to mimic: Bool) {
+        guard mimic != swizzled else { return }
         let defaultSelector = #selector(getter: `default`)
         let defaultMimicSelector = #selector(mimicDefaultSessionConfiguration)
         let ephemeralSelector = #selector(getter: ephemeral)
@@ -30,6 +33,7 @@ extension URLSessionConfiguration {
             URLSessionConfiguration.exchange(defaultMimicSelector, with: defaultSelector)
             URLSessionConfiguration.exchange(ephemeralMimicSelector, with: ephemeralSelector)
         }
+        swizzled = mimic
     }
 
     private func registerClass(_ protocolClass: Swift.AnyClass) {

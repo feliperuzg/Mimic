@@ -10,12 +10,6 @@
 import XCTest
 
 class MimicURLConfigurationTests: XCTestCase {
-    override func setUp() {
-        super.setUp()
-        // FIXME: For some reason this need to be called twice to activate
-        URLSessionConfiguration.activateMimic()
-    }
-
     func testCanSwizzle() {
         URLSessionConfiguration.activateMimic()
 

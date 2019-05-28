@@ -13,7 +13,6 @@ class MimicObjectTests: XCTestCase {
     var sut: MimicObject!
 
     override func tearDown() {
-        Mimic.stopAllMimics()
         sut = nil
         super.tearDown()
     }

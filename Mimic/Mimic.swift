@@ -32,10 +32,6 @@ public final class Mimic {
     public class func stopAllMimics() {
         MimicProtocol.stopAllMimics()
     }
-    
-    public class func start() {
-        URLSessionConfiguration.activateMimic()
-    }
 }
 
 public func request(with method: MimicHTTPMethod, url: String) -> (_ request: URLRequest) -> Bool {
