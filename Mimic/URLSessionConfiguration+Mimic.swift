@@ -7,51 +7,64 @@
 //
 
 extension URLSessionConfiguration {
-    public class func swizzleURLSessionConfiguration() {
-        guard
-            let defaultURLSessionConfiguration = class_getClassMethod(
-                URLSessionConfiguration.self,
-                #selector(getter: URLSessionConfiguration.default)
-            ),
-            let mimicdefaultURLSessionConfiguration = class_getClassMethod(
-                URLSessionConfiguration.self,
-                #selector(URLSessionConfiguration.mimicDefaultSessionConfiguration)
-            ) else {
-            fatalError("Failed to exchange URLSessionConfiguration.default")
-        }
-        method_exchangeImplementations(
-            defaultURLSessionConfiguration,
-            mimicdefaultURLSessionConfiguration
-        )
+    class func activateMimic() {
+        swizzleURLSessionConfiguration(to: true)
+        debugPrint("Mimic has been Activated")
+    }
 
-        guard
-            let ephemeralSessionConfiguration = class_getClassMethod(
-                URLSessionConfiguration.self,
-                #selector(getter: URLSessionConfiguration.ephemeral)
-            ),
-            let mimicEphemeralSessionConfiguration = class_getClassMethod(
-                URLSessionConfiguration.self,
-                #selector(URLSessionConfiguration.mimicEphemeralSessionConfiguration)
-            ) else {
-            fatalError("Failed to exchange URLSessionConfiguration.ephemeral")
+    class func deactivateMimic() {
+        swizzleURLSessionConfiguration(to: false)
+        debugPrint("Mimic has been Deactivated")
+    }
+
+    private class func swizzleURLSessionConfiguration(to mimic: Bool) {
+        let defaultSelector = #selector(getter: `default`)
+        let defaultMimicSelector = #selector(mimicDefaultSessionConfiguration)
+        let ephemeralSelector = #selector(getter: ephemeral)
+        let ephemeralMimicSelector = #selector(mimicEphemeralSessionConfiguration)
+
+        if mimic {
+            URLSessionConfiguration.exchange(defaultSelector, with: defaultMimicSelector)
+            URLSessionConfiguration.exchange(ephemeralSelector, with: ephemeralMimicSelector)
+        } else {
+            URLSessionConfiguration.exchange(defaultMimicSelector, with: defaultSelector)
+            URLSessionConfiguration.exchange(ephemeralMimicSelector, with: ephemeralSelector)
         }
-        method_exchangeImplementations(
-            ephemeralSessionConfiguration,
-            mimicEphemeralSessionConfiguration
-        )
+    }
+
+    private func registerClass(_ protocolClass: Swift.AnyClass) {
+        guard let protocols = self.protocolClasses else {
+            fatalError("Failed to retrieve current protocol classes for \(protocolClass)")
+        }
+        protocolClasses = [protocolClass] + protocols
     }
 
     @objc
-    class func mimicDefaultSessionConfiguration() -> URLSessionConfiguration {
+    private class func mimicDefaultSessionConfiguration() -> URLSessionConfiguration {
         let configuration = mimicDefaultSessionConfiguration()
-        configuration.protocolClasses = [MimicProtocol.self] as [AnyClass] + configuration.protocolClasses!
+        configuration.registerClass(MimicProtocol.self)
         return configuration
     }
 
     @objc
-    class func mimicEphemeralSessionConfiguration() -> URLSessionConfiguration {
+    private class func mimicEphemeralSessionConfiguration() -> URLSessionConfiguration {
         let configuration = mimicEphemeralSessionConfiguration()
-        configuration.protocolClasses = [MimicProtocol.self] as [AnyClass] + configuration.protocolClasses!
+        configuration.registerClass(MimicProtocol.self)
         return configuration
+    }
+
+    private class func exchange(_ selector: Selector, with replacementSelector: Selector) {
+        guard
+            let method = class_getClassMethod(self, selector),
+            let replacementMethod = class_getClassMethod(self, replacementSelector)
+        else {
+            fatalError(
+                """
+                Failed to retrieve method \(selector.description)
+                and/or \(replacementSelector.description)
+                """
+            )
+        }
+        method_exchangeImplementations(method, replacementMethod)
     }
 }

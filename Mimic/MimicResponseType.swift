@@ -6,7 +6,7 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
-public enum MimicResponseType {
+public enum MimicResponseType: Equatable {
     case success(URLResponse, MimicContent)
     case failure(NSError)
 }

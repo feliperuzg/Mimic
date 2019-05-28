@@ -63,12 +63,14 @@ public func response(
             if headers["Content-Type"] == nil {
                 headers["Content-Type"] = "application/json; charset=utf-8"
             }
-            if let response = HTTPURLResponse(
-                url: request.url!,
-                statusCode: status,
-                httpVersion: nil,
-                headerFields: headers
-            ) {
+            if
+                let url = request.url,
+                let response = HTTPURLResponse(
+                    url: url,
+                    statusCode: status,
+                    httpVersion: nil,
+                    headerFields: headers
+                ) {
                 return MimicResponseType.success(response, .content(data))
             } else {
                 return MimicResponseType.failure(NSError(

@@ -11,22 +11,42 @@ import XCTest
 
 class MimicURLConfigurationTests: XCTestCase {
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        // FIXME: For some reason this need to be called twice to activate
+        URLSessionConfiguration.activateMimic()
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    func testCanSwizzle() {
+        URLSessionConfiguration.activateMimic()
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+        guard
+            let defaultProtocols = URLSessionConfiguration.default.protocolClasses,
+            let ephemeralProtocols = URLSessionConfiguration.ephemeral.protocolClasses
+        else {
+            fatalError("Failed to load protocols")
         }
+
+        let defaultNames = defaultProtocols.map({ "\($0)" })
+        let ephemeralNames = ephemeralProtocols.map({ "\($0)" })
+
+        XCTAssertEqual(defaultNames.first, "MimicProtocol")
+        XCTAssertEqual(ephemeralNames.first, "MimicProtocol")
+
+        URLSessionConfiguration.deactivateMimic()
+
+        guard
+            let postDefaultProtocols = URLSessionConfiguration.default.protocolClasses,
+            let postEphemeralProtocols = URLSessionConfiguration.ephemeral.protocolClasses
+        else {
+            fatalError("Failed to load protocols")
+        }
+
+        let postDefaultNames = postDefaultProtocols.map({ "\($0)" })
+        let postEphemeralNames = postEphemeralProtocols.map({ "\($0)" })
+
+        XCTAssertEqual(postDefaultNames.first, "_NSURLHTTPProtocol")
+        XCTAssertFalse(postDefaultNames.contains("MimicProtocol"))
+        XCTAssertEqual(postEphemeralNames.first, "_NSURLHTTPProtocol")
+        XCTAssertFalse(postEphemeralNames.contains("MimicProtocol"))
     }
 }

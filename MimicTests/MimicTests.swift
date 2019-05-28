@@ -166,6 +166,20 @@ class MimicTests: XCTestCase {
         wait(for: [exp], timeout: 5)
     }
 
+    func testStopMimic() {
+        let url = "http://localhost/delete"
+        let object = Mimic.mimic(
+            request: request(with: .delete, url: url),
+            response: response(with: ["message": "testDeleteRequest"])
+        )
+
+        XCTAssertEqual(MimicProtocol.mimics.count, 1)
+
+        Mimic.stopMimic(object)
+
+        XCTAssertTrue(MimicProtocol.mimics.isEmpty)
+    }
+
     private func makeRequest(
         url: String,
         method: MimicHTTPMethod,

@@ -104,4 +104,19 @@ class MimicProtocolTests: XCTestCase {
         XCTAssertNotEqual(object, compareObject)
         XCTAssertNil(compareObject)
     }
+
+    func testCanInit() {
+        let urlRequest = URLRequest(url: URL(string: "http://localhost")!)
+
+        XCTAssertFalse(MimicProtocol.canInit(with: urlRequest))
+
+        _ = MimicProtocol.mimic(
+            MimicObject(
+                request: request(with: .get, url: "http://localhost"),
+                response: response(with: [:])
+            )
+        )
+
+        XCTAssertTrue(MimicProtocol.canInit(with: urlRequest))
+    }
 }

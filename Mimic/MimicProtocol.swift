@@ -13,8 +13,8 @@ class MimicProtocol: URLProtocol {
     class func mimic(_ mimic: MimicObject) -> MimicObject {
         mimics.append(mimic)
         if !registered {
-            URLSessionConfiguration.swizzleURLSessionConfiguration()
             registered = URLProtocol.registerClass(MimicProtocol.self)
+            URLSessionConfiguration.activateMimic()
         }
         return mimic
     }
@@ -36,6 +36,9 @@ class MimicProtocol: URLProtocol {
 
     class func stopAllMimics() {
         mimics.removeAll()
+        URLProtocol.unregisterClass(MimicProtocol.self)
+        URLSessionConfiguration.deactivateMimic()
+        registered = false
     }
 
     override class func canInit(with request: URLRequest) -> Bool {
