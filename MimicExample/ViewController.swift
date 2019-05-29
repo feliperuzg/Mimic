@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     
     @IBAction func didTapSwizzledRequest() {
         Mimic.mimic(
-            request: request(with: .get, url: endpoint),
+            request: request(with: <#T##MimicHTTPMethod#>, url: <#T##String#>),
             delay: 1,
-            response: response(with: ["message": "Fake Response"])
+            response: response(with: <#T##Any#>, status: <#T##Int#>, headers: <#T##[String : String]?#>))
         )
         makeRequest()
     }
