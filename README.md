@@ -57,7 +57,6 @@ Mimic.mimic(
     response: response(with: ["response": true], status: 200, headers: ["SomeHeader": "SomeValue"]) 
 )
 ```
-```
 
 ### Removing stubs
 
