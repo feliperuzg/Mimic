@@ -1,6 +1,6 @@
 # Mimic
 
-`Mimic` is a simply library for stubbing network request.
+`Mimic` is a simple library for stubbing network request.
 
 ## Integration
 
