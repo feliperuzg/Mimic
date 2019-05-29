@@ -14,7 +14,6 @@ To integrate `Mimic` into your Xcode project, add the following to your `Podfile
 
 ## Usage
 
-
 ### Adding new stub
 
 To create a new stub use
@@ -49,12 +48,15 @@ let stub = Mimic.mimic(
 )
 ```
 
+You could also prefer not to store the `MimicObject` that's returned, like:
+
 ```swift
 Mimic.mimic(
-    request: MimicRequest,
-    delay: TimeInterval,
-    response: MimicResponse
+    request: request(with: .get, url: "http://example.com"),
+    delay: 2,
+    response: response(with: ["response": true], status: 200, headers: ["SomeHeader": "SomeValue"]) 
 )
+```
 ```
 
 ### Removing stubs
