@@ -166,6 +166,34 @@ class MimicTests: XCTestCase {
         wait(for: [exp], timeout: 5)
     }
 
+    func testRequestWithHeaders() {
+        let url = "http://localhost/headers"
+        let data = [
+            "Cache-Control": "no-store",
+            "Pragma": "no-cache",
+            "Agent": "Mimic"
+        ]
+        Mimic.mimic(
+            request: request(with: .get, url: url),
+            response: response(with: [:], status: 302, headers: data)
+        )
+        let exp = expectation(description: "testRequestWithHeaders")
+
+        makeRequest(url: url, method: .get, headers: data) { _, response, _ in
+            exp.fulfill()
+            guard let headers = (response as? HTTPURLResponse)?.allHeaderFields else {
+                fatalError("Failed to retrieve headers from response")
+            }
+
+            XCTAssertEqual(headers.count, 4)
+            XCTAssertEqual(headers["Cache-Control"] as? String, "no-store")
+            XCTAssertEqual(headers["Pragma"] as? String, "no-cache")
+            XCTAssertEqual(headers["Agent"] as? String, "Mimic")
+        }
+
+        wait(for: [exp], timeout: 500_000)
+    }
+
     func testStopMimic() {
         let url = "http://localhost/delete"
         let object = Mimic.mimic(

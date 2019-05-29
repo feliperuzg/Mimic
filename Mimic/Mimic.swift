@@ -32,7 +32,7 @@ public final class Mimic {
     public class func stopAllMimics() {
         MimicProtocol.stopAllMimics()
     }
-    
+
     // It's called by default when adding a new mimic Object
     // Call it only when neccessary
     public class func start() {
@@ -65,9 +65,9 @@ public func response(
                 withJSONObject: json,
                 options: JSONSerialization.WritingOptions()
             )
-            var headers = [String: String]()
-            if headers["Content-Type"] == nil {
-                headers["Content-Type"] = "application/json; charset=utf-8"
+            var responseHeaders = headers ?? [String: String]()
+            if responseHeaders["Content-Type"] == nil {
+                responseHeaders["Content-Type"] = "application/json; charset=utf-8"
             }
             if
                 let url = request.url,
@@ -75,7 +75,7 @@ public func response(
                     url: url,
                     statusCode: status,
                     httpVersion: nil,
-                    headerFields: headers
+                    headerFields: responseHeaders
                 ) {
                 return MimicResponseType.success(response, .content(data))
             } else {
