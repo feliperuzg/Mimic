@@ -1,5 +1,5 @@
 PODS:
-  - Mimic (0.0.1)
+  - Mimic (0.0.2)
   - SwiftFormat/CLI (0.38.0)
   - SwiftLint (0.30.1)
 
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  Mimic: 6a5689bbc0b1b12b13e93d0c2efa268bb1268788
+  Mimic: aa4ff31b9a7889709e63e267cfc9d13cb518cfec
   SwiftFormat: 0762bc591b9f6e8efa99402e714a03ede5151656
   SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
 

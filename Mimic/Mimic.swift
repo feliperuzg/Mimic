@@ -32,6 +32,12 @@ public final class Mimic {
     public class func stopAllMimics() {
         MimicProtocol.stopAllMimics()
     }
+    
+    // It's called by default when adding a new mimic Object
+    // Call it only when neccessary
+    public class func start() {
+        URLSessionConfiguration.activateMimic()
+    }
 }
 
 public func request(with method: MimicHTTPMethod, url: String) -> (_ request: URLRequest) -> Bool {
