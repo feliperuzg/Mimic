@@ -48,11 +48,7 @@ public class MimicProtocol: URLProtocol {
     }
 
     public override class func canInit(with request: URLRequest) -> Bool {
-        if Mimic.randomizeMimic {
-            guard !mimics(for: request).isEmpty else { return false }
-        } else {
-            guard mimic(for: request) != nil else { return false }
-        }
+        guard mimic(for: request) != nil else { return false }
         return true
     }
 

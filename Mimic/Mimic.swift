@@ -11,6 +11,7 @@ public typealias MimicResponse = (URLRequest) -> MimicResponseType
 
 public final class Mimic {
     public static var randomizeMimic = false
+
     @discardableResult
     public class func mimic(
         request: @escaping MimicRequest,
