@@ -86,6 +86,30 @@ class MimicProtocolTests: XCTestCase {
         XCTAssertEqual(object, compareObject)
     }
 
+    func testGetMultipleMimics() {
+        let mimic1 = MimicProtocol.mimic(
+            MimicObject(
+                request: request(with: .get, url: "http://localhost"),
+                response: response(with: [:])
+            )
+        )
+
+        let mimic2 = MimicProtocol.mimic(
+            MimicObject(
+                request: request(with: .get, url: "http://localhost"),
+                response: response(with: [:])
+            )
+        )
+
+        XCTAssertEqual(MimicProtocol.mimics.count, 2)
+
+        let urlRequest = URLRequest(url: URL(string: "http://localhost")!)
+
+        let compareObject = MimicProtocol.mimics(for: urlRequest)
+
+        XCTAssertEqual([mimic1, mimic2], compareObject)
+    }
+
     func testGetMimicShouldFail() {
         let object = MimicProtocol.mimic(
             MimicObject(

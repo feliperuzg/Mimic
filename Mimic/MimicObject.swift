@@ -1,5 +1,5 @@
 //
-//  MimicStub.swift
+//  MimicObject.swift
 //  Mimic
 //
 //  Created by Felipe Ruz on 5/23/19.
