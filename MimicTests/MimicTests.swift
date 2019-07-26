@@ -208,42 +208,6 @@ class MimicTests: XCTestCase {
         XCTAssertTrue(MimicProtocol.mimics.isEmpty)
     }
 
-    func testRandomizeMimics() {
-        let url = "http://localhost/randomize"
-        let object1 = Mimic.mimic(
-            request: request(with: .get, url: url),
-            response: response(with: ["message": "one"])
-        )
-        let object2 = Mimic.mimic(
-            request: request(with: .get, url: url),
-            response: response(with: ["message": "two"])
-        )
-
-        let exp1 = expectation(description: "object one received")
-        let exp2 = expectation(description: "object two received")
-
-        makeRequest(url: url, method: .get, headers: nil) { data, _, _ in
-            guard
-                let data = data,
-                let json = try? JSONSerialization.jsonObject(with: data, options: [.allowFragments]),
-                let jsonDict = json as? [String: String]
-            else {
-                XCTFail("Failed to create JSON from data")
-                return
-            }
-            let value = jsonDict["message"]
-            if value == "one" {
-                exp1.fulfill()
-            } else if value == "two" {
-                exp2.fulfill()
-            } else {
-                XCTFail("Failed to fulfill expectations")
-            }
-        }
-
-        wait(for: [exp1, exp2], timeout: 10)
-    }
-
     private func makeRequest(
         url: String,
         method: MimicHTTPMethod,
