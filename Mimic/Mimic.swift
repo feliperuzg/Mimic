@@ -10,7 +10,7 @@ public typealias MimicRequest = (URLRequest) -> Bool
 public typealias MimicResponse = (URLRequest) -> MimicResponseType
 
 public final class Mimic {
-    public static var randomizeMimic = false
+    public static var randomizeMimics = false
 
     @discardableResult
     public class func mimic(

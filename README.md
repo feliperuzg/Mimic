@@ -2,6 +2,15 @@
 
 `Mimic` is a simple library for stubbing network request.
 
+- [Integration](#integration)
+- [Usage](#usage)
+    - [Adding new stub](#adding-new-stub)
+    - [Randomize stubs](#randomize-stubs)
+    - [Using wild card parameters](#using-wild-card-parameters)
+    - [Removing Stubs](#removing-stubs)
+- [Testing](#testing)
+- [Limitations](#limitations)
+
 ## Integration
 
 `Mimic` currently only support integration with [Cocoapods](https://www.cocoapods.org).
@@ -9,7 +18,7 @@
 To integrate `Mimic` into your Xcode project, add the following to your `Podfile`.
 
 ```ruby
-    pod Mimic, ~> '0.0.3'
+    pod Mimic, ~> '0.1.0'
 ```
 
 ## Usage
@@ -29,7 +38,7 @@ To create a new stub use
 Where `MimicRequest` is constructed like:
 
 ```swift
-request(with method: MimicHTTPMethod, url: String)
+request(with method: MimicHTTPMethod, url: String, wildCard: Bool = false)
 ```
 
 And `MimicResponse` is constructed like:
@@ -57,6 +66,52 @@ Mimic.mimic(
     response: response(with: ["response": true], status: 200, headers: ["SomeHeader": "SomeValue"]) 
 )
 ```
+
+### Randomize stubs
+
+`Mimic` supports returning a random mimic for the same request, to archive this just add more than one mimic for the same request, for example:
+
+```swift
+Mimic.mimic(
+    request: request(with: .get, url: "http://example.com"),
+    delay: 2,
+    response: response(with: ["response": true], status: 200]) 
+)
+
+Mimic.mimic(
+    request: request(with: .get, url: "http://example.com"),
+    delay: 2,
+    response: response(with: ["response": false], status: 400]) 
+)
+```
+
+And finally activate the randomize fuction by activating it's parameter in `Mimic`
+
+```swift 
+Mimic.randomizeMimics = true
+```
+
+This will search all mimics for a request and return a random element.
+
+### Using wild card parameters
+
+`Mimic` support adding multiple wild card parameters inside an url by replacing the string with `@wild`. This will allow to stub request to endpoints with dynamic paramters inside path o query, for example:
+
+Let's take as example the followig url
+
+http://example.com/path1/path2?item1=value1&&item2=value2
+
+Adding wild parameter to path parater `path2`
+
+http://example.com/path1/@wild?item1=value1&&item2=value2
+
+Adding wild parameter to query parameter `value1`
+
+http://example.com/path1/path2?item1=@wild&&item2=value2
+
+Adding wild paramter to both `path2` and `value1`
+
+http://example.com/path1/@wild?item1=@wild&&item2=value2
 
 ### Removing stubs
 

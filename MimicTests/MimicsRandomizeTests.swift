@@ -30,7 +30,7 @@ class MimicsRandomizeTests: XCTestCase {
 
     func testRandomizeMimics() {
         let url = "http://localhost/randomize"
-        Mimic.randomizeMimic = true
+        Mimic.randomizeMimics = true
         Mimic.mimic(
             request: request(with: .get, url: url),
             response: response(with: ["message": "one"])

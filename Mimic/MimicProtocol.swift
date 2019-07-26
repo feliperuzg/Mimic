@@ -74,7 +74,7 @@ public class MimicProtocol: URLProtocol {
     public override func stopLoading() {}
 
     private func randomMimic(for request: URLRequest) -> MimicObject? {
-        if Mimic.randomizeMimic {
+        if Mimic.randomizeMimics {
             return MimicProtocol.mimics(for: request).randomElement()
         } else {
             return MimicProtocol.mimic(for: request)
