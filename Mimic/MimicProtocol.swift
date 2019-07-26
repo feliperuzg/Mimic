@@ -6,7 +6,7 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
-class MimicProtocol: URLProtocol {
+public class MimicProtocol: URLProtocol {
     static var mimics = [MimicObject]()
     static var registered = false
 
@@ -20,12 +20,18 @@ class MimicProtocol: URLProtocol {
     }
 
     class func mimic(for request: URLRequest) -> MimicObject? {
-        for mimic in mimics {
-            if mimic.request(request) {
-                return mimic
-            }
+        for mimic in mimics where mimic.request(request) == true {
+            return mimic
         }
         return nil
+    }
+
+    class func mimics(for request: URLRequest) -> [MimicObject] {
+        var results = [MimicObject]()
+        for mimic in mimics where mimic.request(request) == true {
+            results.append(mimic)
+        }
+        return results
     }
 
     class func stopMimic(_ mimic: MimicObject) {
@@ -41,17 +47,17 @@ class MimicProtocol: URLProtocol {
         registered = false
     }
 
-    override class func canInit(with request: URLRequest) -> Bool {
+    public override class func canInit(with request: URLRequest) -> Bool {
         guard mimic(for: request) != nil else { return false }
         return true
     }
 
-    override class func canonicalRequest(for request: URLRequest) -> URLRequest {
+    public override class func canonicalRequest(for request: URLRequest) -> URLRequest {
         return request
     }
 
-    override func startLoading() {
-        if let mimic = MimicProtocol.mimic(for: request) {
+    public override func startLoading() {
+        if let mimic = randomMimic(for: request) {
             DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + mimic.delay) {
                 self.responseType(mimic.response(self.request))
             }
@@ -65,7 +71,15 @@ class MimicProtocol: URLProtocol {
         }
     }
 
-    override func stopLoading() {}
+    public override func stopLoading() {}
+
+    private func randomMimic(for request: URLRequest) -> MimicObject? {
+        if Mimic.randomizeMimics {
+            return MimicProtocol.mimics(for: request).randomElement()
+        } else {
+            return MimicProtocol.mimic(for: request)
+        }
+    }
 
     func responseType(_ responseType: MimicResponseType) {
         switch responseType {

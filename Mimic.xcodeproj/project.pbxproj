@@ -33,6 +33,8 @@
 		A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF522296EE7D005B501D /* MimicProtocol.swift */; };
 		A87FBF552296EE88005B501D /* MimicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF542296EE88005B501D /* MimicObject.swift */; };
 		A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */; };
+		A8FE220D22EA509D00373266 /* MimicsRandomizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE220C22EA509D00373266 /* MimicsRandomizeTests.swift */; };
+		A8FE220F22EB78A700373266 /* MimicWildCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE220E22EB78A700373266 /* MimicWildCardTests.swift */; };
 		B4644ACC551B1E61F0F8C5EC /* Pods_Mimic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923963D5FCECD1E258A57330 /* Pods_Mimic.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		A87FBF522296EE7D005B501D /* MimicProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicProtocol.swift; sourceTree = "<group>"; };
 		A87FBF542296EE88005B501D /* MimicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicObject.swift; sourceTree = "<group>"; };
 		A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethod.swift; sourceTree = "<group>"; };
+		A8FE220C22EA509D00373266 /* MimicsRandomizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicsRandomizeTests.swift; sourceTree = "<group>"; };
+		A8FE220E22EB78A700373266 /* MimicWildCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicWildCardTests.swift; sourceTree = "<group>"; };
 		B5C7911CCE74658EADFB6BB0 /* Pods-MimicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimicTests.release.xcconfig"; path = "Target Support Files/Pods-MimicTests/Pods-MimicTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8A1B6174F64F1130129CB87 /* Pods-MimicExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimicExample.debug.xcconfig"; path = "Target Support Files/Pods-MimicExample/Pods-MimicExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E8ECA15B1923D7752B7CD2FD /* Pods-MimicExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimicExample.release.xcconfig"; path = "Target Support Files/Pods-MimicExample/Pods-MimicExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				A80235E022988F2E00FF92EA /* MimicObjectTests.swift */,
 				A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */,
 				A80235E622988F7B00FF92EA /* MimicContentTests.swift */,
+				A8FE220C22EA509D00373266 /* MimicsRandomizeTests.swift */,
+				A8FE220E22EB78A700373266 /* MimicWildCardTests.swift */,
 			);
 			path = MimicTests;
 			sourceTree = "<group>";
@@ -540,10 +546,12 @@
 			files = (
 				A80235DD22988F1100FF92EA /* MimicURLConfigurationTests.swift in Sources */,
 				A87FBF2D2296E8A7005B501D /* MimicTests.swift in Sources */,
+				A8FE220D22EA509D00373266 /* MimicsRandomizeTests.swift in Sources */,
 				A80235E122988F2E00FF92EA /* MimicObjectTests.swift in Sources */,
 				A80235DF22988F2200FF92EA /* MimicProtocolTests.swift in Sources */,
 				A80235E722988F7B00FF92EA /* MimicContentTests.swift in Sources */,
 				A80235E322988F4F00FF92EA /* MimicHTTPMethodTests.swift in Sources */,
+				A8FE220F22EB78A700373266 /* MimicWildCardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
