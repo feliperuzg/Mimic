@@ -99,19 +99,19 @@ This will search all mimics for a request and return a random element.
 
 Let's take as example the followig url
 
-http://example.com/path1/path2?item1=value1&&item2=value2
+`http://example.com/path1/path2?item1=value1&&item2=value2`
 
 Adding wild parameter to path parater `path2`
 
-http://example.com/path1/@wild?item1=value1&&item2=value2
+`http://example.com/path1/`**@wild**`?item1=value1&&item2=value2`
 
 Adding wild parameter to query parameter `value1`
 
-http://example.com/path1/path2?item1=@wild&&item2=value2
+`http://example.com/path1/path2?item1=`**@wild**`&&item2=value2`
 
 Adding wild paramter to both `path2` and `value1`
 
-http://example.com/path1/@wild?item1=@wild&&item2=value2
+`http://example.com/path1/`**@wild**`?item1=`**@wild**`&&item2=value2`
 
 ### Removing stubs
 
