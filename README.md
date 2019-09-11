@@ -13,12 +13,20 @@
 
 ## Integration
 
-`Mimic` currently only support integration with [Cocoapods](https://www.cocoapods.org).
+Using `Mimic`  with [Cocoapods](https://www.cocoapods.org).
 
 To integrate `Mimic` into your Xcode project, add the following to your `Podfile`.
 
 ```ruby
     pod Mimic, ~> '0.1.0'
+```
+
+Using `Mimic`  with [Carthage](https://github.com/Carthage/Carthage).
+
+To integrate `Mimic` into your Xcode project, add the following to your `Cartfile`.
+
+```ruby
+github "feliperuzg/Mimic" 
 ```
 
 ## Usage
