@@ -171,7 +171,7 @@ class MimicTests: XCTestCase {
         let data = [
             "Cache-Control": "no-store",
             "Pragma": "no-cache",
-            "Agent": "Mimic"
+            "Agent": "Mimic",
         ]
         Mimic.mimic(
             request: request(with: .get, url: url),

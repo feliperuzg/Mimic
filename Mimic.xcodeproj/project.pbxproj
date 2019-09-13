@@ -196,6 +196,8 @@
 				A87FBF1A2296E8A7005B501D /* Sources */,
 				A87FBF1B2296E8A7005B501D /* Frameworks */,
 				A87FBF1C2296E8A7005B501D /* Resources */,
+				A85656BA232BE05D008FDD1A /* Swiftformat */,
+				A85656BB232BE064008FDD1A /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -213,6 +215,8 @@
 				A87FBF232296E8A7005B501D /* Sources */,
 				A87FBF242296E8A7005B501D /* Frameworks */,
 				A87FBF252296E8A7005B501D /* Resources */,
+				A85656B8232BE025008FDD1A /* Swiftformat */,
+				A85656B9232BE02D008FDD1A /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -313,6 +317,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A85656B8232BE025008FDD1A /* Swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftformat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\ncd ${SRCROOT}/MimicTests\nswiftformat .\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+		A85656B9232BE02D008FDD1A /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\ncd ${SRCROOT}/MimicTests\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		A85656BA232BE05D008FDD1A /* Swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftformat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\ncd ${SRCROOT}/Mimic\nswiftformat .\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+		A85656BB232BE064008FDD1A /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\ncd ${SRCROOT}/Mimic\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A87FBF1A2296E8A7005B501D /* Sources */ = {

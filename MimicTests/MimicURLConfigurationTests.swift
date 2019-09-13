@@ -20,8 +20,8 @@ class MimicURLConfigurationTests: XCTestCase {
             fatalError("Failed to load protocols")
         }
 
-        let defaultNames = defaultProtocols.map({ "\($0)" })
-        let ephemeralNames = ephemeralProtocols.map({ "\($0)" })
+        let defaultNames = defaultProtocols.map { "\($0)" }
+        let ephemeralNames = ephemeralProtocols.map { "\($0)" }
 
         XCTAssertEqual(defaultNames.first, "MimicProtocol")
         XCTAssertEqual(ephemeralNames.first, "MimicProtocol")
@@ -35,8 +35,8 @@ class MimicURLConfigurationTests: XCTestCase {
             fatalError("Failed to load protocols")
         }
 
-        let postDefaultNames = postDefaultProtocols.map({ "\($0)" })
-        let postEphemeralNames = postEphemeralProtocols.map({ "\($0)" })
+        let postDefaultNames = postDefaultProtocols.map { "\($0)" }
+        let postEphemeralNames = postEphemeralProtocols.map { "\($0)" }
 
         XCTAssertEqual(postDefaultNames.first, "_NSURLHTTPProtocol")
         XCTAssertFalse(postDefaultNames.contains("MimicProtocol"))
