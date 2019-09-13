@@ -21,11 +21,6 @@
 		A87FBF282296E8A7005B501D /* Mimic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87FBF1E2296E8A7005B501D /* Mimic.framework */; };
 		A87FBF2D2296E8A7005B501D /* MimicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF2C2296E8A7005B501D /* MimicTests.swift */; };
 		A87FBF2F2296E8A7005B501D /* Mimic.h in Headers */ = {isa = PBXBuildFile; fileRef = A87FBF212296E8A7005B501D /* Mimic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A87FBF3F2296E926005B501D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF3E2296E926005B501D /* AppDelegate.swift */; };
-		A87FBF412296E926005B501D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF402296E926005B501D /* ViewController.swift */; };
-		A87FBF442296E926005B501D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87FBF422296E926005B501D /* Main.storyboard */; };
-		A87FBF462296E928005B501D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87FBF452296E928005B501D /* Assets.xcassets */; };
-		A87FBF492296E928005B501D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87FBF472296E928005B501D /* LaunchScreen.storyboard */; };
 		A87FBF4F2296EE60005B501D /* Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF4E2296EE60005B501D /* Mimic.swift */; };
 		A87FBF512296EE74005B501D /* URLSessionConfiguration+Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF502296EE74005B501D /* URLSessionConfiguration+Mimic.swift */; };
 		A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF522296EE7D005B501D /* MimicProtocol.swift */; };
@@ -64,12 +59,6 @@
 		A87FBF2C2296E8A7005B501D /* MimicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicTests.swift; sourceTree = "<group>"; };
 		A87FBF2E2296E8A7005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87FBF3C2296E926005B501D /* MimicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MimicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A87FBF3E2296E926005B501D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A87FBF402296E926005B501D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A87FBF432296E926005B501D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A87FBF452296E928005B501D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A87FBF482296E928005B501D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A87FBF4A2296E928005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87FBF4E2296EE60005B501D /* Mimic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mimic.swift; sourceTree = "<group>"; };
 		A87FBF502296EE74005B501D /* URLSessionConfiguration+Mimic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Mimic.swift"; sourceTree = "<group>"; };
 		A87FBF522296EE7D005B501D /* MimicProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicProtocol.swift; sourceTree = "<group>"; };
@@ -112,7 +101,6 @@
 				A80235EA229C302A00FF92EA /* README.md */,
 				A87FBF202296E8A7005B501D /* Mimic */,
 				A87FBF2B2296E8A7005B501D /* MimicTests */,
-				A87FBF3D2296E926005B501D /* MimicExample */,
 				A87FBF1F2296E8A7005B501D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -159,19 +147,6 @@
 				A8FE220E22EB78A700373266 /* MimicWildCardTests.swift */,
 			);
 			path = MimicTests;
-			sourceTree = "<group>";
-		};
-		A87FBF3D2296E926005B501D /* MimicExample */ = {
-			isa = PBXGroup;
-			children = (
-				A87FBF3E2296E926005B501D /* AppDelegate.swift */,
-				A87FBF402296E926005B501D /* ViewController.swift */,
-				A87FBF422296E926005B501D /* Main.storyboard */,
-				A87FBF452296E928005B501D /* Assets.xcassets */,
-				A87FBF472296E928005B501D /* LaunchScreen.storyboard */,
-				A87FBF4A2296E928005B501D /* Info.plist */,
-			);
-			path = MimicExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,9 +285,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A87FBF492296E928005B501D /* LaunchScreen.storyboard in Resources */,
-				A87FBF462296E928005B501D /* Assets.xcassets in Resources */,
-				A87FBF442296E926005B501D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,8 +399,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A87FBF412296E926005B501D /* ViewController.swift in Sources */,
-				A87FBF3F2296E926005B501D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,25 +411,6 @@
 			targetProxy = A87FBF292296E8A7005B501D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A87FBF422296E926005B501D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A87FBF432296E926005B501D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A87FBF472296E928005B501D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A87FBF482296E928005B501D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A87FBF302296E8A7005B501D /* Debug */ = {
