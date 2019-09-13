@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A80235D92298468600FF92EA /* MimicResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235D82298468600FF92EA /* MimicResponseType.swift */; };
+		A80235DB229846AD00FF92EA /* MimicContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235DA229846AD00FF92EA /* MimicContent.swift */; };
+		A80235DD22988F1100FF92EA /* MimicURLConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235DC22988F1100FF92EA /* MimicURLConfigurationTests.swift */; };
+		A80235DF22988F2200FF92EA /* MimicProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */; };
+		A80235E122988F2E00FF92EA /* MimicObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E022988F2E00FF92EA /* MimicObjectTests.swift */; };
+		A80235E322988F4F00FF92EA /* MimicHTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */; };
+		A80235E722988F7B00FF92EA /* MimicContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E622988F7B00FF92EA /* MimicContentTests.swift */; };
+		A80235EB229C302A00FF92EA /* Mimic.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A80235E9229C302900FF92EA /* Mimic.podspec */; };
+		A80235EC229C302A00FF92EA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A80235EA229C302A00FF92EA /* README.md */; };
+		A80235EE229C307F00FF92EA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A80235ED229C307F00FF92EA /* .swiftlint.yml */; };
+		A80235F0229C308800FF92EA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A80235EF229C308800FF92EA /* .swiftlint.yml */; };
+		A87FBF282296E8A7005B501D /* Mimic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87FBF1E2296E8A7005B501D /* Mimic.framework */; };
+		A87FBF2D2296E8A7005B501D /* MimicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF2C2296E8A7005B501D /* MimicTests.swift */; };
+		A87FBF2F2296E8A7005B501D /* Mimic.h in Headers */ = {isa = PBXBuildFile; fileRef = A87FBF212296E8A7005B501D /* Mimic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A87FBF4F2296EE60005B501D /* Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF4E2296EE60005B501D /* Mimic.swift */; };
+		A87FBF512296EE74005B501D /* URLSessionConfiguration+Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF502296EE74005B501D /* URLSessionConfiguration+Mimic.swift */; };
+		A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF522296EE7D005B501D /* MimicProtocol.swift */; };
+		A87FBF552296EE88005B501D /* MimicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF542296EE88005B501D /* MimicObject.swift */; };
+		A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */; };
+		A8FE220D22EA509D00373266 /* MimicsRandomizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE220C22EA509D00373266 /* MimicsRandomizeTests.swift */; };
+		A8FE220F22EB78A700373266 /* MimicWildCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE220E22EB78A700373266 /* MimicWildCardTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A87FBF292296E8A7005B501D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A87FBF152296E8A7005B501D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A87FBF1D2296E8A7005B501D;
+			remoteInfo = Mimic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A80235D82298468600FF92EA /* MimicResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicResponseType.swift; sourceTree = "<group>"; };
+		A80235DA229846AD00FF92EA /* MimicContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicContent.swift; sourceTree = "<group>"; };
+		A80235DC22988F1100FF92EA /* MimicURLConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicURLConfigurationTests.swift; sourceTree = "<group>"; };
+		A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicProtocolTests.swift; sourceTree = "<group>"; };
+		A80235E022988F2E00FF92EA /* MimicObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicObjectTests.swift; sourceTree = "<group>"; };
+		A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethodTests.swift; sourceTree = "<group>"; };
+		A80235E622988F7B00FF92EA /* MimicContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicContentTests.swift; sourceTree = "<group>"; };
+		A80235E9229C302900FF92EA /* Mimic.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mimic.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A80235EA229C302A00FF92EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A80235ED229C307F00FF92EA /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A80235EF229C308800FF92EA /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		A87FBF1E2296E8A7005B501D /* Mimic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mimic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87FBF212296E8A7005B501D /* Mimic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mimic.h; sourceTree = "<group>"; };
+		A87FBF222296E8A7005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A87FBF272296E8A7005B501D /* MimicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87FBF2C2296E8A7005B501D /* MimicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicTests.swift; sourceTree = "<group>"; };
+		A87FBF2E2296E8A7005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A87FBF3C2296E926005B501D /* MimicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MimicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87FBF4E2296EE60005B501D /* Mimic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mimic.swift; sourceTree = "<group>"; };
+		A87FBF502296EE74005B501D /* URLSessionConfiguration+Mimic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Mimic.swift"; sourceTree = "<group>"; };
+		A87FBF522296EE7D005B501D /* MimicProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicProtocol.swift; sourceTree = "<group>"; };
+		A87FBF542296EE88005B501D /* MimicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicObject.swift; sourceTree = "<group>"; };
+		A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethod.swift; sourceTree = "<group>"; };
+		A8FE220C22EA509D00373266 /* MimicsRandomizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicsRandomizeTests.swift; sourceTree = "<group>"; };
+		A8FE220E22EB78A700373266 /* MimicWildCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicWildCardTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A87FBF1B2296E8A7005B501D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87FBF242296E8A7005B501D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A87FBF282296E8A7005B501D /* Mimic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87FBF392296E926005B501D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A87FBF142296E8A7005B501D = {
+			isa = PBXGroup;
+			children = (
+				A80235E9229C302900FF92EA /* Mimic.podspec */,
+				A80235EA229C302A00FF92EA /* README.md */,
+				A87FBF202296E8A7005B501D /* Mimic */,
+				A87FBF2B2296E8A7005B501D /* MimicTests */,
+				A87FBF1F2296E8A7005B501D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A87FBF1F2296E8A7005B501D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A87FBF1E2296E8A7005B501D /* Mimic.framework */,
+				A87FBF272296E8A7005B501D /* MimicTests.xctest */,
+				A87FBF3C2296E926005B501D /* MimicExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A87FBF202296E8A7005B501D /* Mimic */ = {
+			isa = PBXGroup;
+			children = (
+				A80235ED229C307F00FF92EA /* .swiftlint.yml */,
+				A87FBF212296E8A7005B501D /* Mimic.h */,
+				A87FBF222296E8A7005B501D /* Info.plist */,
+				A87FBF4E2296EE60005B501D /* Mimic.swift */,
+				A87FBF502296EE74005B501D /* URLSessionConfiguration+Mimic.swift */,
+				A87FBF522296EE7D005B501D /* MimicProtocol.swift */,
+				A87FBF542296EE88005B501D /* MimicObject.swift */,
+				A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */,
+				A80235D82298468600FF92EA /* MimicResponseType.swift */,
+				A80235DA229846AD00FF92EA /* MimicContent.swift */,
+			);
+			path = Mimic;
+			sourceTree = "<group>";
+		};
+		A87FBF2B2296E8A7005B501D /* MimicTests */ = {
+			isa = PBXGroup;
+			children = (
+				A80235EF229C308800FF92EA /* .swiftlint.yml */,
+				A87FBF2E2296E8A7005B501D /* Info.plist */,
+				A87FBF2C2296E8A7005B501D /* MimicTests.swift */,
+				A80235DC22988F1100FF92EA /* MimicURLConfigurationTests.swift */,
+				A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */,
+				A80235E022988F2E00FF92EA /* MimicObjectTests.swift */,
+				A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */,
+				A80235E622988F7B00FF92EA /* MimicContentTests.swift */,
+				A8FE220C22EA509D00373266 /* MimicsRandomizeTests.swift */,
+				A8FE220E22EB78A700373266 /* MimicWildCardTests.swift */,
+			);
+			path = MimicTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A87FBF192296E8A7005B501D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A87FBF2F2296E8A7005B501D /* Mimic.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A87FBF1D2296E8A7005B501D /* Mimic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A87FBF322296E8A7005B501D /* Build configuration list for PBXNativeTarget "Mimic" */;
+			buildPhases = (
+				A87FBF192296E8A7005B501D /* Headers */,
+				A87FBF1A2296E8A7005B501D /* Sources */,
+				A87FBF1B2296E8A7005B501D /* Frameworks */,
+				A87FBF1C2296E8A7005B501D /* Resources */,
+				A85656BA232BE05D008FDD1A /* Swiftformat */,
+				A85656BB232BE064008FDD1A /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mimic;
+			productName = Mimic;
+			productReference = A87FBF1E2296E8A7005B501D /* Mimic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A87FBF262296E8A7005B501D /* MimicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A87FBF352296E8A7005B501D /* Build configuration list for PBXNativeTarget "MimicTests" */;
+			buildPhases = (
+				A87FBF232296E8A7005B501D /* Sources */,
+				A87FBF242296E8A7005B501D /* Frameworks */,
+				A87FBF252296E8A7005B501D /* Resources */,
+				A85656B8232BE025008FDD1A /* Swiftformat */,
+				A85656B9232BE02D008FDD1A /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A87FBF2A2296E8A7005B501D /* PBXTargetDependency */,
+			);
+			name = MimicTests;
+			productName = MimicTests;
+			productReference = A87FBF272296E8A7005B501D /* MimicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A87FBF3B2296E926005B501D /* MimicExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A87FBF4B2296E928005B501D /* Build configuration list for PBXNativeTarget "MimicExample" */;
+			buildPhases = (
+				A87FBF382296E926005B501D /* Sources */,
+				A87FBF392296E926005B501D /* Frameworks */,
+				A87FBF3A2296E926005B501D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MimicExample;
+			productName = MimicExample;
+			productReference = A87FBF3C2296E926005B501D /* MimicExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A87FBF152296E8A7005B501D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Felipe Ruz";
+				TargetAttributes = {
+					A87FBF1D2296E8A7005B501D = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					A87FBF262296E8A7005B501D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A87FBF3B2296E926005B501D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = A87FBF182296E8A7005B501D /* Build configuration list for PBXProject "Mimic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A87FBF142296E8A7005B501D;
+			productRefGroup = A87FBF1F2296E8A7005B501D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A87FBF1D2296E8A7005B501D /* Mimic */,
+				A87FBF262296E8A7005B501D /* MimicTests */,
+				A87FBF3B2296E926005B501D /* MimicExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A87FBF1C2296E8A7005B501D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80235EE229C307F00FF92EA /* .swiftlint.yml in Resources */,
+				A80235EC229C302A00FF92EA /* README.md in Resources */,
+				A80235EB229C302A00FF92EA /* Mimic.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87FBF252296E8A7005B501D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80235F0229C308800FF92EA /* .swiftlint.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87FBF3A2296E926005B501D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A85656B8232BE025008FDD1A /* Swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftformat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\ncd ${SRCROOT}/MimicTests\nswiftformat .\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+		A85656B9232BE02D008FDD1A /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\ncd ${SRCROOT}/MimicTests\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		A85656BA232BE05D008FDD1A /* Swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftformat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\ncd ${SRCROOT}/Mimic\nswiftformat .\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+		A85656BB232BE064008FDD1A /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\ncd ${SRCROOT}/Mimic\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A87FBF1A2296E8A7005B501D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A87FBF4F2296EE60005B501D /* Mimic.swift in Sources */,
+				A80235DB229846AD00FF92EA /* MimicContent.swift in Sources */,
+				A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */,
+				A80235D92298468600FF92EA /* MimicResponseType.swift in Sources */,
+				A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */,
+				A87FBF512296EE74005B501D /* URLSessionConfiguration+Mimic.swift in Sources */,
+				A87FBF552296EE88005B501D /* MimicObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87FBF232296E8A7005B501D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80235DD22988F1100FF92EA /* MimicURLConfigurationTests.swift in Sources */,
+				A87FBF2D2296E8A7005B501D /* MimicTests.swift in Sources */,
+				A8FE220D22EA509D00373266 /* MimicsRandomizeTests.swift in Sources */,
+				A80235E122988F2E00FF92EA /* MimicObjectTests.swift in Sources */,
+				A80235DF22988F2200FF92EA /* MimicProtocolTests.swift in Sources */,
+				A80235E722988F7B00FF92EA /* MimicContentTests.swift in Sources */,
+				A80235E322988F4F00FF92EA /* MimicHTTPMethodTests.swift in Sources */,
+				A8FE220F22EB78A700373266 /* MimicWildCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A87FBF382296E926005B501D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A87FBF2A2296E8A7005B501D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A87FBF1D2296E8A7005B501D /* Mimic */;
+			targetProxy = A87FBF292296E8A7005B501D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A87FBF302296E8A7005B501D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A87FBF312296E8A7005B501D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A87FBF332296E8A7005B501D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2D3TXVT8E8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Mimic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.Mimic;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A87FBF342296E8A7005B501D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2D3TXVT8E8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Mimic/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.Mimic;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A87FBF362296E8A7005B501D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D3TXVT8E8;
+				INFOPLIST_FILE = MimicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.MimicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A87FBF372296E8A7005B501D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D3TXVT8E8;
+				INFOPLIST_FILE = MimicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.MimicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A87FBF4C2296E928005B501D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D3TXVT8E8;
+				INFOPLIST_FILE = MimicExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.MimicExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A87FBF4D2296E928005B501D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2D3TXVT8E8;
+				INFOPLIST_FILE = MimicExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.MimicExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A87FBF182296E8A7005B501D /* Build configuration list for PBXProject "Mimic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87FBF302296E8A7005B501D /* Debug */,
+				A87FBF312296E8A7005B501D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A87FBF322296E8A7005B501D /* Build configuration list for PBXNativeTarget "Mimic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87FBF332296E8A7005B501D /* Debug */,
+				A87FBF342296E8A7005B501D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A87FBF352296E8A7005B501D /* Build configuration list for PBXNativeTarget "MimicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87FBF362296E8A7005B501D /* Debug */,
+				A87FBF372296E8A7005B501D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A87FBF4B2296E928005B501D /* Build configuration list for PBXNativeTarget "MimicExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87FBF4C2296E928005B501D /* Debug */,
+				A87FBF4D2296E928005B501D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A87FBF152296E8A7005B501D /* Project object */;
+}
