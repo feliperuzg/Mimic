@@ -7,144 +7,135 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A80235D92298468600FF92EA /* MimicResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235D82298468600FF92EA /* MimicResponseType.swift */; };
-		A80235DB229846AD00FF92EA /* MimicContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235DA229846AD00FF92EA /* MimicContent.swift */; };
-		A80235DD22988F1100FF92EA /* MimicURLConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235DC22988F1100FF92EA /* MimicURLConfigurationTests.swift */; };
-		A80235DF22988F2200FF92EA /* MimicProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */; };
-		A80235E122988F2E00FF92EA /* MimicObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E022988F2E00FF92EA /* MimicObjectTests.swift */; };
-		A80235E322988F4F00FF92EA /* MimicHTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */; };
-		A80235E722988F7B00FF92EA /* MimicContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80235E622988F7B00FF92EA /* MimicContentTests.swift */; };
-		A80235EB229C302A00FF92EA /* Mimic.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A80235E9229C302900FF92EA /* Mimic.podspec */; };
-		A80235EC229C302A00FF92EA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A80235EA229C302A00FF92EA /* README.md */; };
-		A80235EE229C307F00FF92EA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A80235ED229C307F00FF92EA /* .swiftlint.yml */; };
-		A80235F0229C308800FF92EA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A80235EF229C308800FF92EA /* .swiftlint.yml */; };
-		A87FBF282296E8A7005B501D /* Mimic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87FBF1E2296E8A7005B501D /* Mimic.framework */; };
-		A87FBF2D2296E8A7005B501D /* MimicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF2C2296E8A7005B501D /* MimicTests.swift */; };
-		A87FBF2F2296E8A7005B501D /* Mimic.h in Headers */ = {isa = PBXBuildFile; fileRef = A87FBF212296E8A7005B501D /* Mimic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A87FBF4F2296EE60005B501D /* Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF4E2296EE60005B501D /* Mimic.swift */; };
-		A87FBF512296EE74005B501D /* URLSessionConfiguration+Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF502296EE74005B501D /* URLSessionConfiguration+Mimic.swift */; };
-		A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF522296EE7D005B501D /* MimicProtocol.swift */; };
-		A87FBF552296EE88005B501D /* MimicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF542296EE88005B501D /* MimicObject.swift */; };
-		A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */; };
-		A8FE220D22EA509D00373266 /* MimicsRandomizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE220C22EA509D00373266 /* MimicsRandomizeTests.swift */; };
-		A8FE220F22EB78A700373266 /* MimicWildCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE220E22EB78A700373266 /* MimicWildCardTests.swift */; };
+		A818ED42237E2D9D005D0D06 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A818ED3F237E2D9D005D0D06 /* LICENSE */; };
+		A818ED43237E2D9D005D0D06 /* Mimic.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A818ED40237E2D9D005D0D06 /* Mimic.podspec */; };
+		A818ED44237E2D9D005D0D06 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A818ED41237E2D9D005D0D06 /* README.md */; };
+		A85BC1B1237E2726001FFA1A /* Mimic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85BC1A7237E2725001FFA1A /* Mimic.framework */; };
+		A85BC1B8237E2726001FFA1A /* Mimic.h in Headers */ = {isa = PBXBuildFile; fileRef = A85BC1AA237E2725001FFA1A /* Mimic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A85BC1C8237E276D001FFA1A /* Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1C1237E276C001FFA1A /* Mimic.swift */; };
+		A85BC1C9237E276D001FFA1A /* MimicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1C2237E276D001FFA1A /* MimicProtocol.swift */; };
+		A85BC1CA237E276D001FFA1A /* URLSessionConfiguration+Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1C3237E276D001FFA1A /* URLSessionConfiguration+Mimic.swift */; };
+		A85BC1CB237E276D001FFA1A /* MimicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1C4237E276D001FFA1A /* MimicObject.swift */; };
+		A85BC1CC237E276D001FFA1A /* MimicContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1C5237E276D001FFA1A /* MimicContent.swift */; };
+		A85BC1CD237E276D001FFA1A /* MimicHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1C6237E276D001FFA1A /* MimicHTTPMethod.swift */; };
+		A85BC1CE237E276D001FFA1A /* MimicResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1C7237E276D001FFA1A /* MimicResponseType.swift */; };
+		A85BC1D7237E277A001FFA1A /* MimicURLConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1CF237E277A001FFA1A /* MimicURLConfigurationTests.swift */; };
+		A85BC1D8237E277A001FFA1A /* MimicProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D0237E277A001FFA1A /* MimicProtocolTests.swift */; };
+		A85BC1D9237E277A001FFA1A /* MimicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D1237E277A001FFA1A /* MimicTests.swift */; };
+		A85BC1DA237E277A001FFA1A /* MimicContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D2237E277A001FFA1A /* MimicContentTests.swift */; };
+		A85BC1DB237E277A001FFA1A /* MimicWildCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D3237E277A001FFA1A /* MimicWildCardTests.swift */; };
+		A85BC1DC237E277A001FFA1A /* MimicObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D4237E277A001FFA1A /* MimicObjectTests.swift */; };
+		A85BC1DD237E277A001FFA1A /* MimicHTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D5237E277A001FFA1A /* MimicHTTPMethodTests.swift */; };
+		A85BC1DE237E277A001FFA1A /* MimicsRandomizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D6237E277A001FFA1A /* MimicsRandomizeTests.swift */; };
+		A87C903C237F34E400A1D06F /* MimicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C903B237F34E400A1D06F /* MimicTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A87FBF292296E8A7005B501D /* PBXContainerItemProxy */ = {
+		A85BC1B2237E2726001FFA1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A87FBF152296E8A7005B501D /* Project object */;
+			containerPortal = A85BC19E237E2725001FFA1A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A87FBF1D2296E8A7005B501D;
+			remoteGlobalIDString = A85BC1A6237E2725001FFA1A;
 			remoteInfo = Mimic;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A80235D82298468600FF92EA /* MimicResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicResponseType.swift; sourceTree = "<group>"; };
-		A80235DA229846AD00FF92EA /* MimicContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicContent.swift; sourceTree = "<group>"; };
-		A80235DC22988F1100FF92EA /* MimicURLConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicURLConfigurationTests.swift; sourceTree = "<group>"; };
-		A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicProtocolTests.swift; sourceTree = "<group>"; };
-		A80235E022988F2E00FF92EA /* MimicObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicObjectTests.swift; sourceTree = "<group>"; };
-		A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethodTests.swift; sourceTree = "<group>"; };
-		A80235E622988F7B00FF92EA /* MimicContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicContentTests.swift; sourceTree = "<group>"; };
-		A80235E9229C302900FF92EA /* Mimic.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mimic.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A80235EA229C302A00FF92EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A80235ED229C307F00FF92EA /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
-		A80235EF229C308800FF92EA /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
-		A87FBF1E2296E8A7005B501D /* Mimic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mimic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A87FBF212296E8A7005B501D /* Mimic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mimic.h; sourceTree = "<group>"; };
-		A87FBF222296E8A7005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A87FBF272296E8A7005B501D /* MimicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A87FBF2C2296E8A7005B501D /* MimicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicTests.swift; sourceTree = "<group>"; };
-		A87FBF2E2296E8A7005B501D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A87FBF3C2296E926005B501D /* MimicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MimicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A87FBF4E2296EE60005B501D /* Mimic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mimic.swift; sourceTree = "<group>"; };
-		A87FBF502296EE74005B501D /* URLSessionConfiguration+Mimic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Mimic.swift"; sourceTree = "<group>"; };
-		A87FBF522296EE7D005B501D /* MimicProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicProtocol.swift; sourceTree = "<group>"; };
-		A87FBF542296EE88005B501D /* MimicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicObject.swift; sourceTree = "<group>"; };
-		A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethod.swift; sourceTree = "<group>"; };
-		A8FE220C22EA509D00373266 /* MimicsRandomizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicsRandomizeTests.swift; sourceTree = "<group>"; };
-		A8FE220E22EB78A700373266 /* MimicWildCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicWildCardTests.swift; sourceTree = "<group>"; };
+		A818ED3F237E2D9D005D0D06 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A818ED40237E2D9D005D0D06 /* Mimic.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mimic.podspec; sourceTree = "<group>"; };
+		A818ED41237E2D9D005D0D06 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A85BC1A7237E2725001FFA1A /* Mimic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mimic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A85BC1AA237E2725001FFA1A /* Mimic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mimic.h; sourceTree = "<group>"; };
+		A85BC1AB237E2725001FFA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A85BC1B0237E2726001FFA1A /* MimicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A85BC1B7237E2726001FFA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A85BC1C1237E276C001FFA1A /* Mimic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mimic.swift; sourceTree = "<group>"; };
+		A85BC1C2237E276D001FFA1A /* MimicProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicProtocol.swift; sourceTree = "<group>"; };
+		A85BC1C3237E276D001FFA1A /* URLSessionConfiguration+Mimic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Mimic.swift"; sourceTree = "<group>"; };
+		A85BC1C4237E276D001FFA1A /* MimicObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicObject.swift; sourceTree = "<group>"; };
+		A85BC1C5237E276D001FFA1A /* MimicContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicContent.swift; sourceTree = "<group>"; };
+		A85BC1C6237E276D001FFA1A /* MimicHTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethod.swift; sourceTree = "<group>"; };
+		A85BC1C7237E276D001FFA1A /* MimicResponseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicResponseType.swift; sourceTree = "<group>"; };
+		A85BC1CF237E277A001FFA1A /* MimicURLConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicURLConfigurationTests.swift; sourceTree = "<group>"; };
+		A85BC1D0237E277A001FFA1A /* MimicProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicProtocolTests.swift; sourceTree = "<group>"; };
+		A85BC1D1237E277A001FFA1A /* MimicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MimicTests.swift; path = "../../Mimic Backup/MimicTests/MimicTests.swift"; sourceTree = "<group>"; };
+		A85BC1D2237E277A001FFA1A /* MimicContentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicContentTests.swift; sourceTree = "<group>"; };
+		A85BC1D3237E277A001FFA1A /* MimicWildCardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicWildCardTests.swift; sourceTree = "<group>"; };
+		A85BC1D4237E277A001FFA1A /* MimicObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicObjectTests.swift; sourceTree = "<group>"; };
+		A85BC1D5237E277A001FFA1A /* MimicHTTPMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethodTests.swift; sourceTree = "<group>"; };
+		A85BC1D6237E277A001FFA1A /* MimicsRandomizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicsRandomizeTests.swift; sourceTree = "<group>"; };
+		A87C903B237F34E400A1D06F /* MimicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A87FBF1B2296E8A7005B501D /* Frameworks */ = {
+		A85BC1A4237E2725001FFA1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A87FBF242296E8A7005B501D /* Frameworks */ = {
+		A85BC1AD237E2726001FFA1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A87FBF282296E8A7005B501D /* Mimic.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A87FBF392296E926005B501D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A85BC1B1237E2726001FFA1A /* Mimic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A87FBF142296E8A7005B501D = {
+		A85BC19D237E2725001FFA1A = {
 			isa = PBXGroup;
 			children = (
-				A80235E9229C302900FF92EA /* Mimic.podspec */,
-				A80235EA229C302A00FF92EA /* README.md */,
-				A87FBF202296E8A7005B501D /* Mimic */,
-				A87FBF2B2296E8A7005B501D /* MimicTests */,
-				A87FBF1F2296E8A7005B501D /* Products */,
+				A818ED3F237E2D9D005D0D06 /* LICENSE */,
+				A818ED40237E2D9D005D0D06 /* Mimic.podspec */,
+				A818ED41237E2D9D005D0D06 /* README.md */,
+				A85BC1A9237E2725001FFA1A /* Mimic */,
+				A85BC1B4237E2726001FFA1A /* MimicTests */,
+				A85BC1A8237E2725001FFA1A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A87FBF1F2296E8A7005B501D /* Products */ = {
+		A85BC1A8237E2725001FFA1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A87FBF1E2296E8A7005B501D /* Mimic.framework */,
-				A87FBF272296E8A7005B501D /* MimicTests.xctest */,
-				A87FBF3C2296E926005B501D /* MimicExample.app */,
+				A85BC1A7237E2725001FFA1A /* Mimic.framework */,
+				A85BC1B0237E2726001FFA1A /* MimicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A87FBF202296E8A7005B501D /* Mimic */ = {
+		A85BC1A9237E2725001FFA1A /* Mimic */ = {
 			isa = PBXGroup;
 			children = (
-				A80235ED229C307F00FF92EA /* .swiftlint.yml */,
-				A87FBF212296E8A7005B501D /* Mimic.h */,
-				A87FBF222296E8A7005B501D /* Info.plist */,
-				A87FBF4E2296EE60005B501D /* Mimic.swift */,
-				A87FBF502296EE74005B501D /* URLSessionConfiguration+Mimic.swift */,
-				A87FBF522296EE7D005B501D /* MimicProtocol.swift */,
-				A87FBF542296EE88005B501D /* MimicObject.swift */,
-				A87FBF572296FBE5005B501D /* MimicHTTPMethod.swift */,
-				A80235D82298468600FF92EA /* MimicResponseType.swift */,
-				A80235DA229846AD00FF92EA /* MimicContent.swift */,
+				A85BC1AA237E2725001FFA1A /* Mimic.h */,
+				A85BC1AB237E2725001FFA1A /* Info.plist */,
+				A85BC1C1237E276C001FFA1A /* Mimic.swift */,
+				A85BC1C5237E276D001FFA1A /* MimicContent.swift */,
+				A85BC1C6237E276D001FFA1A /* MimicHTTPMethod.swift */,
+				A85BC1C4237E276D001FFA1A /* MimicObject.swift */,
+				A85BC1C2237E276D001FFA1A /* MimicProtocol.swift */,
+				A85BC1C7237E276D001FFA1A /* MimicResponseType.swift */,
+				A85BC1C3237E276D001FFA1A /* URLSessionConfiguration+Mimic.swift */,
 			);
 			path = Mimic;
 			sourceTree = "<group>";
 		};
-		A87FBF2B2296E8A7005B501D /* MimicTests */ = {
+		A85BC1B4237E2726001FFA1A /* MimicTests */ = {
 			isa = PBXGroup;
 			children = (
-				A80235EF229C308800FF92EA /* .swiftlint.yml */,
-				A87FBF2E2296E8A7005B501D /* Info.plist */,
-				A87FBF2C2296E8A7005B501D /* MimicTests.swift */,
-				A80235DC22988F1100FF92EA /* MimicURLConfigurationTests.swift */,
-				A80235DE22988F2200FF92EA /* MimicProtocolTests.swift */,
-				A80235E022988F2E00FF92EA /* MimicObjectTests.swift */,
-				A80235E222988F4F00FF92EA /* MimicHTTPMethodTests.swift */,
-				A80235E622988F7B00FF92EA /* MimicContentTests.swift */,
-				A8FE220C22EA509D00373266 /* MimicsRandomizeTests.swift */,
-				A8FE220E22EB78A700373266 /* MimicWildCardTests.swift */,
+				A85BC1B7237E2726001FFA1A /* Info.plist */,
+				A85BC1D2237E277A001FFA1A /* MimicContentTests.swift */,
+				A85BC1D5237E277A001FFA1A /* MimicHTTPMethodTests.swift */,
+				A85BC1D4237E277A001FFA1A /* MimicObjectTests.swift */,
+				A85BC1D0237E277A001FFA1A /* MimicProtocolTests.swift */,
+				A85BC1D6237E277A001FFA1A /* MimicsRandomizeTests.swift */,
+				A87C903B237F34E400A1D06F /* MimicTests.swift */,
+				A85BC1D1237E277A001FFA1A /* MimicTests.swift */,
+				A85BC1CF237E277A001FFA1A /* MimicURLConfigurationTests.swift */,
+				A85BC1D3237E277A001FFA1A /* MimicWildCardTests.swift */,
 			);
 			path = MimicTests;
 			sourceTree = "<group>";
@@ -152,27 +143,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A87FBF192296E8A7005B501D /* Headers */ = {
+		A85BC1A2237E2725001FFA1A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A87FBF2F2296E8A7005B501D /* Mimic.h in Headers */,
+				A85BC1B8237E2726001FFA1A /* Mimic.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A87FBF1D2296E8A7005B501D /* Mimic */ = {
+		A85BC1A6237E2725001FFA1A /* Mimic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A87FBF322296E8A7005B501D /* Build configuration list for PBXNativeTarget "Mimic" */;
+			buildConfigurationList = A85BC1BB237E2726001FFA1A /* Build configuration list for PBXNativeTarget "Mimic" */;
 			buildPhases = (
-				A87FBF192296E8A7005B501D /* Headers */,
-				A87FBF1A2296E8A7005B501D /* Sources */,
-				A87FBF1B2296E8A7005B501D /* Frameworks */,
-				A87FBF1C2296E8A7005B501D /* Resources */,
-				A85656BA232BE05D008FDD1A /* Swiftformat */,
-				A85656BB232BE064008FDD1A /* Swiftlint */,
+				A85BC1A2237E2725001FFA1A /* Headers */,
+				A85BC1A3237E2725001FFA1A /* Sources */,
+				A85BC1A4237E2725001FFA1A /* Frameworks */,
+				A85BC1A5237E2725001FFA1A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -180,108 +169,76 @@
 			);
 			name = Mimic;
 			productName = Mimic;
-			productReference = A87FBF1E2296E8A7005B501D /* Mimic.framework */;
+			productReference = A85BC1A7237E2725001FFA1A /* Mimic.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A87FBF262296E8A7005B501D /* MimicTests */ = {
+		A85BC1AF237E2726001FFA1A /* MimicTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A87FBF352296E8A7005B501D /* Build configuration list for PBXNativeTarget "MimicTests" */;
+			buildConfigurationList = A85BC1BE237E2726001FFA1A /* Build configuration list for PBXNativeTarget "MimicTests" */;
 			buildPhases = (
-				A87FBF232296E8A7005B501D /* Sources */,
-				A87FBF242296E8A7005B501D /* Frameworks */,
-				A87FBF252296E8A7005B501D /* Resources */,
-				A85656B8232BE025008FDD1A /* Swiftformat */,
-				A85656B9232BE02D008FDD1A /* Swiftlint */,
+				A85BC1AC237E2726001FFA1A /* Sources */,
+				A85BC1AD237E2726001FFA1A /* Frameworks */,
+				A85BC1AE237E2726001FFA1A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A87FBF2A2296E8A7005B501D /* PBXTargetDependency */,
+				A85BC1B3237E2726001FFA1A /* PBXTargetDependency */,
 			);
 			name = MimicTests;
 			productName = MimicTests;
-			productReference = A87FBF272296E8A7005B501D /* MimicTests.xctest */;
+			productReference = A85BC1B0237E2726001FFA1A /* MimicTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A87FBF3B2296E926005B501D /* MimicExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A87FBF4B2296E928005B501D /* Build configuration list for PBXNativeTarget "MimicExample" */;
-			buildPhases = (
-				A87FBF382296E926005B501D /* Sources */,
-				A87FBF392296E926005B501D /* Frameworks */,
-				A87FBF3A2296E926005B501D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MimicExample;
-			productName = MimicExample;
-			productReference = A87FBF3C2296E926005B501D /* MimicExample.app */;
-			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A87FBF152296E8A7005B501D /* Project object */ = {
+		A85BC19E237E2725001FFA1A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Felipe Ruz";
 				TargetAttributes = {
-					A87FBF1D2296E8A7005B501D = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+					A85BC1A6237E2725001FFA1A = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
-					A87FBF262296E8A7005B501D = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					A87FBF3B2296E926005B501D = {
-						CreatedOnToolsVersion = 10.1;
+					A85BC1AF237E2726001FFA1A = {
+						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = A87FBF182296E8A7005B501D /* Build configuration list for PBXProject "Mimic" */;
+			buildConfigurationList = A85BC1A1237E2725001FFA1A /* Build configuration list for PBXProject "Mimic" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = A87FBF142296E8A7005B501D;
-			productRefGroup = A87FBF1F2296E8A7005B501D /* Products */;
+			mainGroup = A85BC19D237E2725001FFA1A;
+			productRefGroup = A85BC1A8237E2725001FFA1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A87FBF1D2296E8A7005B501D /* Mimic */,
-				A87FBF262296E8A7005B501D /* MimicTests */,
-				A87FBF3B2296E926005B501D /* MimicExample */,
+				A85BC1A6237E2725001FFA1A /* Mimic */,
+				A85BC1AF237E2726001FFA1A /* MimicTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A87FBF1C2296E8A7005B501D /* Resources */ = {
+		A85BC1A5237E2725001FFA1A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80235EE229C307F00FF92EA /* .swiftlint.yml in Resources */,
-				A80235EC229C302A00FF92EA /* README.md in Resources */,
-				A80235EB229C302A00FF92EA /* Mimic.podspec in Resources */,
+				A818ED44237E2D9D005D0D06 /* README.md in Resources */,
+				A818ED43237E2D9D005D0D06 /* Mimic.podspec in Resources */,
+				A818ED42237E2D9D005D0D06 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A87FBF252296E8A7005B501D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A80235F0229C308800FF92EA /* .swiftlint.yml in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A87FBF3A2296E926005B501D /* Resources */ = {
+		A85BC1AE237E2726001FFA1A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -290,130 +247,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A85656B8232BE025008FDD1A /* Swiftformat */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Swiftformat;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftformat >/dev/null; then\ncd ${SRCROOT}/MimicTests\nswiftformat .\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
-		};
-		A85656B9232BE02D008FDD1A /* Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Swiftlint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\ncd ${SRCROOT}/MimicTests\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		A85656BA232BE05D008FDD1A /* Swiftformat */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Swiftformat;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftformat >/dev/null; then\ncd ${SRCROOT}/Mimic\nswiftformat .\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
-		};
-		A85656BB232BE064008FDD1A /* Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Swiftlint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\ncd ${SRCROOT}/Mimic\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		A87FBF1A2296E8A7005B501D /* Sources */ = {
+		A85BC1A3237E2725001FFA1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A87FBF4F2296EE60005B501D /* Mimic.swift in Sources */,
-				A80235DB229846AD00FF92EA /* MimicContent.swift in Sources */,
-				A87FBF582296FBE5005B501D /* MimicHTTPMethod.swift in Sources */,
-				A80235D92298468600FF92EA /* MimicResponseType.swift in Sources */,
-				A87FBF532296EE7D005B501D /* MimicProtocol.swift in Sources */,
-				A87FBF512296EE74005B501D /* URLSessionConfiguration+Mimic.swift in Sources */,
-				A87FBF552296EE88005B501D /* MimicObject.swift in Sources */,
+				A85BC1CE237E276D001FFA1A /* MimicResponseType.swift in Sources */,
+				A85BC1C8237E276D001FFA1A /* Mimic.swift in Sources */,
+				A85BC1C9237E276D001FFA1A /* MimicProtocol.swift in Sources */,
+				A85BC1CD237E276D001FFA1A /* MimicHTTPMethod.swift in Sources */,
+				A85BC1CB237E276D001FFA1A /* MimicObject.swift in Sources */,
+				A85BC1CA237E276D001FFA1A /* URLSessionConfiguration+Mimic.swift in Sources */,
+				A85BC1CC237E276D001FFA1A /* MimicContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A87FBF232296E8A7005B501D /* Sources */ = {
+		A85BC1AC237E2726001FFA1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80235DD22988F1100FF92EA /* MimicURLConfigurationTests.swift in Sources */,
-				A87FBF2D2296E8A7005B501D /* MimicTests.swift in Sources */,
-				A8FE220D22EA509D00373266 /* MimicsRandomizeTests.swift in Sources */,
-				A80235E122988F2E00FF92EA /* MimicObjectTests.swift in Sources */,
-				A80235DF22988F2200FF92EA /* MimicProtocolTests.swift in Sources */,
-				A80235E722988F7B00FF92EA /* MimicContentTests.swift in Sources */,
-				A80235E322988F4F00FF92EA /* MimicHTTPMethodTests.swift in Sources */,
-				A8FE220F22EB78A700373266 /* MimicWildCardTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A87FBF382296E926005B501D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A85BC1DD237E277A001FFA1A /* MimicHTTPMethodTests.swift in Sources */,
+				A85BC1D7237E277A001FFA1A /* MimicURLConfigurationTests.swift in Sources */,
+				A85BC1D9237E277A001FFA1A /* MimicTests.swift in Sources */,
+				A87C903C237F34E400A1D06F /* MimicTests.swift in Sources */,
+				A85BC1DA237E277A001FFA1A /* MimicContentTests.swift in Sources */,
+				A85BC1DE237E277A001FFA1A /* MimicsRandomizeTests.swift in Sources */,
+				A85BC1DB237E277A001FFA1A /* MimicWildCardTests.swift in Sources */,
+				A85BC1D8237E277A001FFA1A /* MimicProtocolTests.swift in Sources */,
+				A85BC1DC237E277A001FFA1A /* MimicObjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A87FBF2A2296E8A7005B501D /* PBXTargetDependency */ = {
+		A85BC1B3237E2726001FFA1A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A87FBF1D2296E8A7005B501D /* Mimic */;
-			targetProxy = A87FBF292296E8A7005B501D /* PBXContainerItemProxy */;
+			target = A85BC1A6237E2725001FFA1A /* Mimic */;
+			targetProxy = A85BC1B2237E2726001FFA1A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A87FBF302296E8A7005B501D /* Debug */ = {
+		A85BC1B9237E2726001FFA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -465,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -477,7 +353,7 @@
 			};
 			name = Debug;
 		};
-		A87FBF312296E8A7005B501D /* Release */ = {
+		A85BC1BA237E2726001FFA1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -523,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -535,7 +411,7 @@
 			};
 			name = Release;
 		};
-		A87FBF332296E8A7005B501D /* Debug */ = {
+		A85BC1BC237E2726001FFA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -554,16 +430,17 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.Mimic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A87FBF342296E8A7005B501D /* Release */ = {
+		A85BC1BD237E2726001FFA1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -585,12 +462,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.Mimic;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		A87FBF362296E8A7005B501D /* Debug */ = {
+		A85BC1BF237E2726001FFA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -604,12 +481,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.MimicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A87FBF372296E8A7005B501D /* Release */ = {
+		A85BC1C0237E2726001FFA1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -623,43 +500,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.MimicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A87FBF4C2296E928005B501D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2D3TXVT8E8;
-				INFOPLIST_FILE = MimicExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.MimicExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A87FBF4D2296E928005B501D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2D3TXVT8E8;
-				INFOPLIST_FILE = MimicExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cl.fruz.MimicExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -667,43 +508,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A87FBF182296E8A7005B501D /* Build configuration list for PBXProject "Mimic" */ = {
+		A85BC1A1237E2725001FFA1A /* Build configuration list for PBXProject "Mimic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A87FBF302296E8A7005B501D /* Debug */,
-				A87FBF312296E8A7005B501D /* Release */,
+				A85BC1B9237E2726001FFA1A /* Debug */,
+				A85BC1BA237E2726001FFA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A87FBF322296E8A7005B501D /* Build configuration list for PBXNativeTarget "Mimic" */ = {
+		A85BC1BB237E2726001FFA1A /* Build configuration list for PBXNativeTarget "Mimic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A87FBF332296E8A7005B501D /* Debug */,
-				A87FBF342296E8A7005B501D /* Release */,
+				A85BC1BC237E2726001FFA1A /* Debug */,
+				A85BC1BD237E2726001FFA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A87FBF352296E8A7005B501D /* Build configuration list for PBXNativeTarget "MimicTests" */ = {
+		A85BC1BE237E2726001FFA1A /* Build configuration list for PBXNativeTarget "MimicTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A87FBF362296E8A7005B501D /* Debug */,
-				A87FBF372296E8A7005B501D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A87FBF4B2296E928005B501D /* Build configuration list for PBXNativeTarget "MimicExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A87FBF4C2296E928005B501D /* Debug */,
-				A87FBF4D2296E928005B501D /* Release */,
+				A85BC1BF237E2726001FFA1A /* Debug */,
+				A85BC1C0237E2726001FFA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A87FBF152296E8A7005B501D /* Project object */;
+	rootObject = A85BC19E237E2725001FFA1A /* Project object */;
 }
