@@ -18,7 +18,7 @@ Using `Mimic`  with [Cocoapods](https://www.cocoapods.org).
 To integrate `Mimic` into your Xcode project, add the following to your `Podfile`.
 
 ```ruby
-    pod 'Mimic', ~> '0.2.0'
+    pod 'Mimic', ~> '1.0.0'
 ```
 
 Using `Mimic`  with [Carthage](https://github.com/Carthage/Carthage).
