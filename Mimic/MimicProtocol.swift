@@ -35,7 +35,7 @@ public class MimicProtocol: URLProtocol {
     }
 
     class func stopMimic(_ mimic: MimicObject) {
-        if let index = mimics.index(of: mimic) {
+        if let index = mimics.firstIndex(of: mimic) {
             mimics.remove(at: index)
         }
     }

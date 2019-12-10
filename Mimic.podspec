@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "Mimic"
-  spec.version      = "1.0.0"
+  spec.version      = "1.1.0"
   spec.summary      = "Networking Stub Solution"
   spec.description  = "Mocking Metwork Solution"
   spec.homepage     = "https://github.com/feliperuzg/Mimic"
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   spec.ios.deployment_target = "10.0"
-  spec.swift_version = '4.2'
+  spec.swift_version = '5.0'
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 

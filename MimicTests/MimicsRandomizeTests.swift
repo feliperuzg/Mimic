@@ -59,7 +59,6 @@ class MimicsRandomizeTests: XCTestCase {
     ) {
         makeRequest(url: url, method: method, headers: headers) { [weak self] jsonDict in
             let value = jsonDict["message"]
-            print(jsonDict)
             if value == "one", let one = self?.oneReceived, !one {
                 self?.oneReceived = true
                 self?.exp.fulfill()

@@ -27,7 +27,6 @@
 		A85BC1DC237E277A001FFA1A /* MimicObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D4237E277A001FFA1A /* MimicObjectTests.swift */; };
 		A85BC1DD237E277A001FFA1A /* MimicHTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D5237E277A001FFA1A /* MimicHTTPMethodTests.swift */; };
 		A85BC1DE237E277A001FFA1A /* MimicsRandomizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D6237E277A001FFA1A /* MimicsRandomizeTests.swift */; };
-		A87C903C237F34E400A1D06F /* MimicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C903B237F34E400A1D06F /* MimicTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		A85BC1D4237E277A001FFA1A /* MimicObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicObjectTests.swift; sourceTree = "<group>"; };
 		A85BC1D5237E277A001FFA1A /* MimicHTTPMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethodTests.swift; sourceTree = "<group>"; };
 		A85BC1D6237E277A001FFA1A /* MimicsRandomizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicsRandomizeTests.swift; sourceTree = "<group>"; };
-		A87C903B237F34E400A1D06F /* MimicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +130,6 @@
 				A85BC1D4237E277A001FFA1A /* MimicObjectTests.swift */,
 				A85BC1D0237E277A001FFA1A /* MimicProtocolTests.swift */,
 				A85BC1D6237E277A001FFA1A /* MimicsRandomizeTests.swift */,
-				A87C903B237F34E400A1D06F /* MimicTests.swift */,
 				A85BC1D1237E277A001FFA1A /* MimicTests.swift */,
 				A85BC1CF237E277A001FFA1A /* MimicURLConfigurationTests.swift */,
 				A85BC1D3237E277A001FFA1A /* MimicWildCardTests.swift */,
@@ -269,7 +266,6 @@
 				A85BC1DD237E277A001FFA1A /* MimicHTTPMethodTests.swift in Sources */,
 				A85BC1D7237E277A001FFA1A /* MimicURLConfigurationTests.swift in Sources */,
 				A85BC1D9237E277A001FFA1A /* MimicTests.swift in Sources */,
-				A87C903C237F34E400A1D06F /* MimicTests.swift in Sources */,
 				A85BC1DA237E277A001FFA1A /* MimicContentTests.swift in Sources */,
 				A85BC1DE237E277A001FFA1A /* MimicsRandomizeTests.swift in Sources */,
 				A85BC1DB237E277A001FFA1A /* MimicWildCardTests.swift in Sources */,
