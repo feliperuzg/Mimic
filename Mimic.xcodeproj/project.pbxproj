@@ -10,6 +10,7 @@
 		A818ED42237E2D9D005D0D06 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A818ED3F237E2D9D005D0D06 /* LICENSE */; };
 		A818ED43237E2D9D005D0D06 /* Mimic.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A818ED40237E2D9D005D0D06 /* Mimic.podspec */; };
 		A818ED44237E2D9D005D0D06 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A818ED41237E2D9D005D0D06 /* README.md */; };
+		A8361A5D23DB3FFA00522C7E /* MimicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8361A5C23DB3FFA00522C7E /* MimicTests.swift */; };
 		A85BC1B1237E2726001FFA1A /* Mimic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85BC1A7237E2725001FFA1A /* Mimic.framework */; };
 		A85BC1B8237E2726001FFA1A /* Mimic.h in Headers */ = {isa = PBXBuildFile; fileRef = A85BC1AA237E2725001FFA1A /* Mimic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A85BC1C8237E276D001FFA1A /* Mimic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1C1237E276C001FFA1A /* Mimic.swift */; };
@@ -21,7 +22,6 @@
 		A85BC1CE237E276D001FFA1A /* MimicResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1C7237E276D001FFA1A /* MimicResponseType.swift */; };
 		A85BC1D7237E277A001FFA1A /* MimicURLConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1CF237E277A001FFA1A /* MimicURLConfigurationTests.swift */; };
 		A85BC1D8237E277A001FFA1A /* MimicProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D0237E277A001FFA1A /* MimicProtocolTests.swift */; };
-		A85BC1D9237E277A001FFA1A /* MimicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D1237E277A001FFA1A /* MimicTests.swift */; };
 		A85BC1DA237E277A001FFA1A /* MimicContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D2237E277A001FFA1A /* MimicContentTests.swift */; };
 		A85BC1DB237E277A001FFA1A /* MimicWildCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D3237E277A001FFA1A /* MimicWildCardTests.swift */; };
 		A85BC1DC237E277A001FFA1A /* MimicObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D4237E277A001FFA1A /* MimicObjectTests.swift */; };
@@ -43,6 +43,7 @@
 		A818ED3F237E2D9D005D0D06 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A818ED40237E2D9D005D0D06 /* Mimic.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mimic.podspec; sourceTree = "<group>"; };
 		A818ED41237E2D9D005D0D06 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A8361A5C23DB3FFA00522C7E /* MimicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimicTests.swift; sourceTree = "<group>"; };
 		A85BC1A7237E2725001FFA1A /* Mimic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mimic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85BC1AA237E2725001FFA1A /* Mimic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mimic.h; sourceTree = "<group>"; };
 		A85BC1AB237E2725001FFA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		A85BC1C7237E276D001FFA1A /* MimicResponseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicResponseType.swift; sourceTree = "<group>"; };
 		A85BC1CF237E277A001FFA1A /* MimicURLConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicURLConfigurationTests.swift; sourceTree = "<group>"; };
 		A85BC1D0237E277A001FFA1A /* MimicProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicProtocolTests.swift; sourceTree = "<group>"; };
-		A85BC1D1237E277A001FFA1A /* MimicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MimicTests.swift; path = "../../Mimic Backup/MimicTests/MimicTests.swift"; sourceTree = "<group>"; };
 		A85BC1D2237E277A001FFA1A /* MimicContentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicContentTests.swift; sourceTree = "<group>"; };
 		A85BC1D3237E277A001FFA1A /* MimicWildCardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicWildCardTests.swift; sourceTree = "<group>"; };
 		A85BC1D4237E277A001FFA1A /* MimicObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicObjectTests.swift; sourceTree = "<group>"; };
@@ -130,9 +130,9 @@
 				A85BC1D4237E277A001FFA1A /* MimicObjectTests.swift */,
 				A85BC1D0237E277A001FFA1A /* MimicProtocolTests.swift */,
 				A85BC1D6237E277A001FFA1A /* MimicsRandomizeTests.swift */,
-				A85BC1D1237E277A001FFA1A /* MimicTests.swift */,
 				A85BC1CF237E277A001FFA1A /* MimicURLConfigurationTests.swift */,
 				A85BC1D3237E277A001FFA1A /* MimicWildCardTests.swift */,
+				A8361A5C23DB3FFA00522C7E /* MimicTests.swift */,
 			);
 			path = MimicTests;
 			sourceTree = "<group>";
@@ -265,10 +265,10 @@
 			files = (
 				A85BC1DD237E277A001FFA1A /* MimicHTTPMethodTests.swift in Sources */,
 				A85BC1D7237E277A001FFA1A /* MimicURLConfigurationTests.swift in Sources */,
-				A85BC1D9237E277A001FFA1A /* MimicTests.swift in Sources */,
 				A85BC1DA237E277A001FFA1A /* MimicContentTests.swift in Sources */,
 				A85BC1DE237E277A001FFA1A /* MimicsRandomizeTests.swift in Sources */,
 				A85BC1DB237E277A001FFA1A /* MimicWildCardTests.swift in Sources */,
+				A8361A5D23DB3FFA00522C7E /* MimicTests.swift in Sources */,
 				A85BC1D8237E277A001FFA1A /* MimicProtocolTests.swift in Sources */,
 				A85BC1DC237E277A001FFA1A /* MimicObjectTests.swift in Sources */,
 			);
