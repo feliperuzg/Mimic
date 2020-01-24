@@ -11,12 +11,10 @@ extension URLSessionConfiguration {
 
     class func activateMimic() {
         swizzleURLSessionConfiguration(to: true)
-        debugPrint("Mimic has been Activated")
     }
 
     class func deactivateMimic() {
         swizzleURLSessionConfiguration(to: false)
-        debugPrint("Mimic has been Deactivated")
     }
 
     private class func swizzleURLSessionConfiguration(to mimic: Bool) {
