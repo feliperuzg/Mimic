@@ -13,6 +13,6 @@ jobs:
         uses: actions/checkout@v1
       - name: Build and test
         run: 
-          xcodebuild clean test -project Mimic.xcodeproj -scheme Mimic -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild clean test -project Mimic.xcodeproj -scheme Mimic -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO | xcpretty
         env: 
          destination: ${{ matrix.destination }}
