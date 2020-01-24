@@ -1,5 +1,5 @@
 name: Test
-on: [pull_request]
+on: [push, pull_request]
 
 jobs:
   test:
@@ -10,7 +10,7 @@ jobs:
           destination: ['platform=iOS Simulator,name=iPhone X', 'platform=iOS Simulator,name=iPhone 8']
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v1
       - name: Build and test
         run: 
           xcodebuild clean test -project Mimic.xcodeproj -scheme Mimic -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
