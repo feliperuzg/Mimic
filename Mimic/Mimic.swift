@@ -110,7 +110,7 @@ private func compare(wildQuery: [URLQueryItem]?, with query: [URLQueryItem]?) ->
 public func response(
     with json: Any,
     status: Int = 200,
-    headers: [String: String]? = nil
+    headers: [String: String] = [:]
 ) -> (_ request: URLRequest) -> MimicResponseType {
     return { (request: URLRequest) in
         do {
@@ -118,7 +118,7 @@ public func response(
                 withJSONObject: json,
                 options: JSONSerialization.WritingOptions()
             )
-            var responseHeaders = headers ?? [String: String]()
+            var responseHeaders = headers
             if responseHeaders["Content-Type"] == nil {
                 responseHeaders["Content-Type"] = "application/json; charset=utf-8"
             }
@@ -143,3 +143,35 @@ public func response(
         }
     }
 }
+
+public func rawResponse(
+    with file: Any,
+    status: Int = 200,
+    headers: [String: String] = [:]
+) -> (_ request: URLRequest) -> MimicResponseType {
+    return { (request: URLRequest) in
+        var responseHeaders = headers
+        if responseHeaders["Content-Type"] == nil {
+            responseHeaders["Content-Type"] = "application/json; charset=utf-8"
+        }
+        if
+            let url = request.url,
+            let response = HTTPURLResponse(
+                url: url,
+                statusCode: status,
+                httpVersion: nil,
+                headerFields: responseHeaders
+            ),
+            let data = file as? Data
+        {
+            return MimicResponseType.success(response, .content(data))
+        } else {
+            return MimicResponseType.failure(NSError(
+                domain: NSExceptionName.internalInconsistencyException.rawValue,
+                code: 0,
+                userInfo: [NSLocalizedDescriptionKey: "Failed to create MimicResponse"]
+            ))
+        }
+    }
+}
+
