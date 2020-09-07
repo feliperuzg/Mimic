@@ -21,7 +21,7 @@ class MimicWildCardTests: XCTestCase {
 
         Mimic.mimic(
             request: request(with: .get, url: wildUrl, wildCard: true),
-            response: response(with: ["message": "wildcard"], status: 200, headers: nil)
+            response: response(with: ["message": "wildcard"], status: 200)
         )
 
         let exp = expectation(description: "testWildCardPath")
@@ -40,7 +40,7 @@ class MimicWildCardTests: XCTestCase {
 
         Mimic.mimic(
             request: request(with: .get, url: wildUrl, wildCard: true),
-            response: response(with: ["message": "wildcard"], status: 200, headers: nil)
+            response: response(with: ["message": "wildcard"], status: 200)
         )
 
         let exp = expectation(description: "testMultipleWildCardPaths")
@@ -59,7 +59,7 @@ class MimicWildCardTests: XCTestCase {
 
         Mimic.mimic(
             request: request(with: .get, url: wildUrl, wildCard: true),
-            response: response(with: ["message": "wildcard"], status: 200, headers: nil)
+            response: response(with: ["message": "wildcard"], status: 200)
         )
 
         let exp = expectation(description: "testWildCardQuery")
@@ -78,7 +78,7 @@ class MimicWildCardTests: XCTestCase {
 
         Mimic.mimic(
             request: request(with: .get, url: wildUrl, wildCard: true),
-            response: response(with: ["message": "wildcard"], status: 200, headers: nil)
+            response: response(with: ["message": "wildcard"], status: 200)
         )
 
         let exp = expectation(description: "testMultipleWildCardQuerys")
@@ -97,7 +97,7 @@ class MimicWildCardTests: XCTestCase {
 
         Mimic.mimic(
             request: request(with: .get, url: wildUrl, wildCard: true),
-            response: response(with: ["message": "wildcard"], status: 200, headers: nil)
+            response: response(with: ["message": "wildcard"], status: 200)
         )
 
         let exp = expectation(description: "testWildCardPathAndQuery")

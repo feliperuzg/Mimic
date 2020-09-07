@@ -7,6 +7,7 @@
 //
 @testable import Mimic
 import XCTest
+import PDFKit
 
 class MimicTests: XCTestCase {
     override func tearDown() {
@@ -191,6 +192,51 @@ class MimicTests: XCTestCase {
         }
 
         wait(for: [exp], timeout: 500_000)
+    }
+    
+    func testRawResponse() {
+        let url = "http://localhost/pdf"
+        guard
+            let path = Bundle(for: MimicTests.self).url(forResource: "SamplePDF", withExtension: "pdf"),
+            let data = try? Data(contentsOf: path)
+        else {
+            XCTFail("Failed to create Data from PDF")
+            return
+        }
+        
+        Mimic.mimic(
+            request: request(with: .post, url: url),
+            response: rawResponse(with: data, headers: ["Content-Type": "application/pdf"])
+        )
+
+        let exp = expectation(description: "testRawResponse")
+
+        makeRequest(
+            url: url,
+            method: .post,
+            headers: nil
+        ) { data, response, error in
+            exp.fulfill()
+            XCTAssertNil(error)
+            XCTAssertEqual(response?.url?.absoluteString, url)
+
+            let headers = (response as? HTTPURLResponse)?.allHeaderFields
+            XCTAssertEqual(headers?.count, 1)
+            XCTAssertEqual(headers?["Content-Type"] as? String, "application/pdf")
+
+            guard
+                let data = data,
+                let pdf = PDFDocument(data: data)
+            else {
+                XCTFail("Failed to create PDF from data")
+                return
+            }
+            XCTAssertEqual(pdf.pageCount, 1)
+            let text = pdf.page(at: 0)?.attributedString?.string
+            XCTAssertEqual("Sample PDF\n", text)
+        }
+
+        wait(for: [exp], timeout: 15)
     }
 
     func testStopMimic() {

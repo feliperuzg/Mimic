@@ -27,6 +27,7 @@
 		A85BC1DC237E277A001FFA1A /* MimicObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D4237E277A001FFA1A /* MimicObjectTests.swift */; };
 		A85BC1DD237E277A001FFA1A /* MimicHTTPMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D5237E277A001FFA1A /* MimicHTTPMethodTests.swift */; };
 		A85BC1DE237E277A001FFA1A /* MimicsRandomizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85BC1D6237E277A001FFA1A /* MimicsRandomizeTests.swift */; };
+		A87412DB2506B7C5003F1B5F /* SamplePDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A87412DA2506B7C5003F1B5F /* SamplePDF.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		A85BC1D4237E277A001FFA1A /* MimicObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicObjectTests.swift; sourceTree = "<group>"; };
 		A85BC1D5237E277A001FFA1A /* MimicHTTPMethodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicHTTPMethodTests.swift; sourceTree = "<group>"; };
 		A85BC1D6237E277A001FFA1A /* MimicsRandomizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimicsRandomizeTests.swift; sourceTree = "<group>"; };
+		A87412DA2506B7C5003F1B5F /* SamplePDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SamplePDF.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		A85BC1B4237E2726001FFA1A /* MimicTests */ = {
 			isa = PBXGroup;
 			children = (
+				A87412D92506B7B1003F1B5F /* Files */,
 				A85BC1B7237E2726001FFA1A /* Info.plist */,
 				A85BC1D2237E277A001FFA1A /* MimicContentTests.swift */,
 				A85BC1D5237E277A001FFA1A /* MimicHTTPMethodTests.swift */,
@@ -135,6 +138,14 @@
 				A8361A5C23DB3FFA00522C7E /* MimicTests.swift */,
 			);
 			path = MimicTests;
+			sourceTree = "<group>";
+		};
+		A87412D92506B7B1003F1B5F /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				A87412DA2506B7C5003F1B5F /* SamplePDF.pdf */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87412DB2506B7C5003F1B5F /* SamplePDF.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
