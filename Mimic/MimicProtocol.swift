@@ -20,22 +20,15 @@ public class MimicProtocol: URLProtocol {
     }
 
     class func mimic(for request: URLRequest) -> MimicObject? {
-        for mimic in mimics where mimic.request(request) == true {
-            return mimic
-        }
-        return nil
+        return mimics.last(where: { $0.request(request) } )
     }
 
     class func mimics(for request: URLRequest) -> [MimicObject] {
-        var results = [MimicObject]()
-        for mimic in mimics where mimic.request(request) == true {
-            results.append(mimic)
-        }
-        return results
+        return mimics.filter { $0.request(request) }
     }
 
     class func stopMimic(_ mimic: MimicObject) {
-        if let index = mimics.firstIndex(of: mimic) {
+        if let index = mimics.lastIndex(of: mimic) {
             mimics.remove(at: index)
         }
     }
