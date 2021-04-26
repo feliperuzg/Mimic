@@ -120,7 +120,8 @@
 				A85BC1C7237E276D001FFA1A /* MimicResponseType.swift */,
 				A85BC1C3237E276D001FFA1A /* URLSessionConfiguration+Mimic.swift */,
 			);
-			path = Mimic;
+			name = Mimic;
+			path = Sources/Mimic;
 			sourceTree = "<group>";
 		};
 		A85BC1B4237E2726001FFA1A /* MimicTests */ = {
@@ -137,7 +138,8 @@
 				A85BC1D3237E277A001FFA1A /* MimicWildCardTests.swift */,
 				A8361A5C23DB3FFA00522C7E /* MimicTests.swift */,
 			);
-			path = MimicTests;
+			name = MimicTests;
+			path = Tests/MimicTests;
 			sourceTree = "<group>";
 		};
 		A87412D92506B7B1003F1B5F /* Files */ = {
@@ -430,7 +432,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Mimic/Info.plist;
+				INFOPLIST_FILE = Sources/Mimic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,7 +462,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Mimic/Info.plist;
+				INFOPLIST_FILE = Sources/Mimic/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,7 +485,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2D3TXVT8E8;
-				INFOPLIST_FILE = MimicTests/Info.plist;
+				INFOPLIST_FILE = Tests/MimicTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,7 +504,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2D3TXVT8E8;
-				INFOPLIST_FILE = MimicTests/Info.plist;
+				INFOPLIST_FILE = Tests/MimicTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
