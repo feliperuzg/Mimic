@@ -6,6 +6,8 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
+import Foundation
+
 public struct MimicObject: Equatable {
     let request: MimicRequest
     let delay: TimeInterval

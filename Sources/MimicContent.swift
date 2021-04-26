@@ -6,6 +6,8 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
+import Foundation
+
 public enum MimicContent: ExpressibleByNilLiteral, Equatable {
     public init(nilLiteral _: ()) {
         self = .empty

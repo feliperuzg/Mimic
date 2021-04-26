@@ -6,6 +6,8 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
+import Foundation
+
 extension URLSessionConfiguration {
     private static var swizzled = false
 
