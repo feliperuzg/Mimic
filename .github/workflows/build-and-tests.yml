@@ -11,10 +11,8 @@ jobs:
   build:
     runs-on: macOS-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Checkout
-        uses: actions/checkout@v1
+        run: bash <(curl -Ls https://install.tuist.io)
       - name: Build and Tests
-        uses: tuist/tuist-action@0.1.8
-        with:
-          command: "test"
-          arguments: "Mimic"
+        run: tuist test
