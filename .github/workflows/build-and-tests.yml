@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Build and Tests
-        uses: tuist/tuist-action@0.1.0
+        uses: tuist/tuist-action@0.1.8
         with:
           command: "test"
           arguments: "Mimic"
