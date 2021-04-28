@@ -9,6 +9,7 @@ let project = Project(
             platform: .iOS,
             product: .framework,
             bundleId: "cl.fruz.Mimic",
+            deploymentTarget: .iOS(targetVersion: "10.0", devices: .iphone),
             infoPlist: "Sources/Info.plist",
             sources: ["Sources/**"]
         ),
@@ -36,5 +37,6 @@ let project = Project(
                 codeCoverageTargets: ["Mimic"]
             )
         )
-    ]
+    ],
+    resourceSynthesizers: []
 )
