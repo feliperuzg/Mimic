@@ -2,6 +2,7 @@
 */project.xcworkspace/*
 *.xcworkspace
 *.xcodeproj/xcuserdata/*
+*.xcodeproj
 
 ### CocoaPods ###
 ## CocoaPods GitIgnore Template
@@ -74,3 +75,6 @@ contents.xcworkspacedata
 
 ## Fortify
 *.fpr
+
+## Tuist
+Derived/

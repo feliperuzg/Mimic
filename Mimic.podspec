@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "Mimic"
-  spec.version      = "1.2.1"
+  spec.version      = "1.3.0"
   spec.summary      = "Networking Stub Solution"
   spec.description  = "Mocking Metwork Solution"
   spec.homepage     = "https://github.com/feliperuzg/Mimic"
@@ -14,7 +14,6 @@ Pod::Spec.new do |spec|
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   spec.author             = { "Felipe Ruz" => "feliperuzg@gmail.com" }
-  # spec.social_media_url   = "https://twitter.com/Felipe Ruz"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -28,24 +27,6 @@ Pod::Spec.new do |spec|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source_files = 'Mimic/**/*.{swift}'
-  #spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-
-  # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
-
-  # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-
+  spec.source_files = 'Sources/**/*.{swift}'
 
 end

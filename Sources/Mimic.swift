@@ -6,6 +6,8 @@
 //  Copyright © 2019 Felipe Ruz. All rights reserved.
 //
 
+import Foundation
+
 public typealias MimicRequest = (URLRequest) -> Bool
 public typealias MimicResponse = (URLRequest) -> MimicResponseType
 
