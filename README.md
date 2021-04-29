@@ -18,10 +18,20 @@ Using `Mimic`  with [Cocoapods](https://www.cocoapods.org).
 To integrate `Mimic` into your Xcode project, add the following to your `Podfile`.
 
 ```ruby
-    pod 'Mimic', '~> 1.0.0'
+    pod 'Mimic', '~> 1.3.0'
 ```
 
-Using `Mimic`  with [Carthage](https://github.com/Carthage/Carthage).
+Using `Mimic` with [Swift Package Manager](https://github.com/apple/swift-package-manager).
+
+Add `Mimic` as a dependcy in your `Package.swift` file.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/feliperuzg/Mimic", .upToNextMajor(from: "1.3.0"))
+]
+```
+
+Using `Mimic` with [Carthage](https://github.com/Carthage/Carthage).
 
 To integrate `Mimic` into your Xcode project, add the following to your `Cartfile`.
 
