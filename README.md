@@ -20,7 +20,7 @@ Using `Mimic`  with [Cocoapods](https://www.cocoapods.org).
 To integrate `Mimic` into your Xcode project, add the following to your `Podfile`.
 
 ```ruby
-    pod 'Mimic', '~> 1.3.0'
+    pod 'Mimic', '~> 1.3.1'
 ```
 
 ### Swift Package Manager
@@ -31,7 +31,7 @@ Add `Mimic` as a dependcy in your `Package.swift` file.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/feliperuzg/Mimic", .upToNextMajor(from: "1.3.0"))
+    .package(url: "https://github.com/feliperuzg/Mimic", .upToNextMajor(from: "1.3.1"))
 ]
 ```
 
