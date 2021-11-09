@@ -30,12 +30,8 @@ let project = Project(
         Scheme(
             name: "Mimic",
             shared: true,
-            buildAction: BuildAction(targets: ["Mimic"]),
-            testAction: TestAction(
-                targets: ["MimicTests"],
-                coverage: true,
-                codeCoverageTargets: ["Mimic"]
-            )
+            buildAction: .buildAction(targets: ["Mimic"]),
+            testAction: .targets(["MimicTests"], options: .options(coverage: true, codeCoverageTargets: ["Mimic"]))
         )
     ],
     resourceSynthesizers: []
