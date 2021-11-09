@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "Mimic"
-  spec.version      = "1.3.0"
+  spec.version      = "1.3.1"
   spec.summary      = "Networking Stub Solution"
   spec.description  = "Mocking Metwork Solution"
   spec.homepage     = "https://github.com/feliperuzg/Mimic"
