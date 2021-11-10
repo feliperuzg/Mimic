@@ -1,4 +1,4 @@
-// swift-tools-version:5.4.0
+// swift-tools-version:5.0
 
 import PackageDescription
 	
@@ -17,8 +17,7 @@ let package = Package(
 	              path: "Sources")),
 	          .testTarget(
 	              name: "MimicTests",
-	              dependencies: ["Mimic"],
-	              path: "Sources")),
+	              dependencies: ["Mimic"]),
 	      ]
 )
 
