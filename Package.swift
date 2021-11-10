@@ -14,7 +14,7 @@ let package = Package(
 	          .target(
 	              name: "Mimic",
 	              dependencies: [],
-	              path: "Sources")),
+	              path: "Sources"),
 	          .testTarget(
 	              name: "MimicTests",
 	              dependencies: ["Mimic"]),
